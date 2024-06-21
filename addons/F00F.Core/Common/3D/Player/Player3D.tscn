@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cv22bkp1hljgw"]
+
+[ext_resource type="Script" uid="uid://dfr3sqodny0bc" path="res://addons/F00F.Core/Common/3D/Player/Player3D.cs" id="1_gy21v"]
+
+[node name="Player" type="CharacterBody3D" unique_id=526102912]
+script = ExtResource("1_gy21v")

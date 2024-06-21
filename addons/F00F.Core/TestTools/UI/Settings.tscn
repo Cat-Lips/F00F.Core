@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dm3au5n83xpuq"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0e7ovome7g" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataViewEx.tscn" id="1_64e3j"]
+[ext_resource type="Script" uid="uid://dgqlnq5ohei60" path="res://addons/F00F.Core/TestTools/UI/Settings.cs" id="2_wxoar"]
+
+[node name="Settings" unique_id=2047388148 instance=ExtResource("1_64e3j")]
+anchors_preset = 3
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -82.0
+offset_top = -75.0
+offset_bottom = 0.0
+grow_vertical = 0
+script = ExtResource("2_wxoar")
+
+[node name="Title" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(1051121370) index="0" unique_id=1030496282]
+text = "Settings"
+
+[editable path="Panel/Margin/Layout/Scroll"]

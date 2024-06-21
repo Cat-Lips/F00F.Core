@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Run": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot_v4.6/Godot_v4.6.exe",
+      "commandLineArgs": "--debug-collisions --disable-vsync > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Edit": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot_v4.6/Godot_v4.6.exe",
+      "commandLineArgs": "--editor > godot.log 2>&1",
+      "workingDirectory": "."
+    }
+  }
+}

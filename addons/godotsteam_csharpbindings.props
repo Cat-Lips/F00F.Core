@@ -1,0 +1,26 @@
+<Project>
+
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);GODOT_STEAM</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content
+      Link="steam_api64.dll"
+      Include="addons/godotsteam/win64/steam_api64.dll"
+      Condition="'$(GodotTargetPlatform)' == 'windows'"
+      CopyToOutputDirectory="PreserveNewest" />
+    <Content
+      Link="libsteam_api.so"
+      Include="addons/godotsteam/linux64/libsteam_api.so"
+      Condition="'$(GodotTargetPlatform)' == 'linuxbsd'"
+      CopyToOutputDirectory="PreserveNewest" />
+    <Content
+      Link="libsteam_api.dylib"
+      Include="addons/godotsteam/osx/libsteam_api.dylib"
+      Condition="'$(GodotTargetPlatform)' == 'macos'"
+      CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cisupbadfleeo"]
+
+[ext_resource type="Script" uid="uid://bf6ok8ib3euq3" path="res://addons/F00F.Core/TestTools/ColliderTest/TestController.cs" id="1_54f1k"]
+
+[node name="Controller" type="Node" unique_id=492954715]
+script = ExtResource("1_54f1k")
