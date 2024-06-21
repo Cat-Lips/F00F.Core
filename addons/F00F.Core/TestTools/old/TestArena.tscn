@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://ysl1hmwi0iyk"]
+
+[ext_resource type="PackedScene" uid="uid://dql6k8yvowyyg" path="res://addons/F00F.Core/TestTools/old/TestTerrain.tscn" id="1_oeocg"]
+[ext_resource type="Script" uid="uid://c1ktefck5ne3b" path="res://addons/F00F.Core/TestTools/old/TestArena.cs" id="1_ukdsc"]
+
+[node name="TestArena" instance=ExtResource("1_oeocg")]
+script = ExtResource("1_ukdsc")
