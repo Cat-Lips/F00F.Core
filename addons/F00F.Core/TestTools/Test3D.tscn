@@ -1,0 +1,17 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkc3x133vmsum"]
+
+[ext_resource type="PackedScene" uid="uid://bds7513d0ag58" path="res://addons/F00F.Core/Game3D.tscn" id="1_yebd0"]
+[ext_resource type="Script" uid="uid://dtyqgkcnuxreb" path="res://addons/F00F.Core/TestTools/Test3D.cs" id="2_3wq8a"]
+[ext_resource type="PackedScene" uid="uid://djnwc52ikkf7x" path="res://addons/F00F.Core/TestTools/_/Options.tscn" id="4_2swky"]
+[ext_resource type="PackedScene" uid="uid://dm3au5n83xpuq" path="res://addons/F00F.Core/TestTools/_/Settings.tscn" id="5_j5qf5"]
+[ext_resource type="PackedScene" uid="uid://ysl1hmwi0iyk" path="res://addons/F00F.Core/TestTools/_/TestArena.tscn" id="6_23wbp"]
+
+[node name="Root" instance=ExtResource("1_yebd0")]
+script = ExtResource("2_3wq8a")
+
+[node name="Options" parent="." index="3" instance=ExtResource("4_2swky")]
+
+[node name="Settings" parent="." index="4" instance=ExtResource("5_j5qf5")]
+Title = ""
+
+[node name="TestArena" parent="." index="5" instance=ExtResource("6_23wbp")]
