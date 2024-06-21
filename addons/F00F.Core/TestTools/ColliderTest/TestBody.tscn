@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://gmutahvacwve"]
+
+[ext_resource type="Script" uid="uid://cseeaoodt07oe" path="res://addons/F00F.Core/TestTools/ColliderTest/TestBody.cs" id="1_mxo5x"]
+[ext_resource type="PackedScene" uid="uid://cisupbadfleeo" path="res://addons/F00F.Core/TestTools/ColliderTest/TestController.tscn" id="2_jdi63"]
+
+[node name="TestBody" type="RigidBody3D"]
+script = ExtResource("1_mxo5x")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+
+[node name="Shape" type="CollisionShape3D" parent="."]
+
+[node name="Controller" parent="." instance=ExtResource("2_jdi63")]
