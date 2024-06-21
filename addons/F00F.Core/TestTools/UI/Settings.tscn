@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm3au5n83xpuq"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0e7ovome7g" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataViewEx.tscn" id="1_64e3j"]
+[ext_resource type="Script" uid="uid://dgqlnq5ohei60" path="res://addons/F00F.Core/TestTools/UI/Settings.cs" id="2_wxoar"]
+
+[node name="Settings" instance=ExtResource("1_64e3j")]
+offset_left = -82.0
+offset_bottom = 67.0
+script = ExtResource("2_wxoar")
+
+[node name="Title" parent="Panel/Margin/Layout" index="0"]
+text = "Settings"
+
+[editable path="Panel/Margin/Layout/Scroll"]

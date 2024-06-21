@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://upyr4exs6lga"]
+
+[ext_resource type="Script" uid="uid://xba2xaxb5bon" path="res://addons/F00F.Core/Common/3D/Physics/GravityBody3D.cs" id="1_oum6l"]
+
+[node name="Body" type="RigidBody3D"]
+script = ExtResource("1_oum6l")
+
+[node name="Area" type="Area3D" parent="."]
+monitoring = false
+monitorable = false
+gravity_space_override = 1
+gravity_point = true
+gravity_point_center = Vector3(0, 0, 0)
+gravity_direction = Vector3(0, 0, 0)
+gravity = 0.0
