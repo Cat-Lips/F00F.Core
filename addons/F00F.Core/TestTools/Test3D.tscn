@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://4434sxtrhcct"]
+
+[ext_resource type="PackedScene" uid="uid://k7jse42wae57" path="res://addons/F00F.Core/Game3D.tscn" id="1_xl211"]
+[ext_resource type="Script" uid="uid://msx6u5hxxh4f" path="res://addons/F00F.Core/TestTools/Test3D.cs" id="2_jdaiy"]
+[ext_resource type="PackedScene" uid="uid://djnwc52ikkf7x" path="res://addons/F00F.Core/TestTools/UI/Options.tscn" id="3_ra55j"]
+[ext_resource type="PackedScene" uid="uid://dm3au5n83xpuq" path="res://addons/F00F.Core/TestTools/UI/Settings.tscn" id="4_8al6g"]
+
+[node name="Root" instance=ExtResource("1_xl211")]
+script = ExtResource("2_jdaiy")
+
+[node name="Options" parent="UI" index="3" instance=ExtResource("3_ra55j")]
+unique_name_in_owner = true
+
+[node name="Settings" parent="UI" index="4" instance=ExtResource("4_8al6g")]
+unique_name_in_owner = true
