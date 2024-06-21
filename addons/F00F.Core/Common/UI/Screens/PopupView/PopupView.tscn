@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://b3mghnepoas47"]
+
+[ext_resource type="Script" uid="uid://c1kptwa3sv5ia" path="res://addons/F00F.Core/Common/UI/Screens/PopupView/PopupView.cs" id="1_t0p1m"]
+
+[node name="Layout" type="VBoxContainer" unique_id=1888813347]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.5
+offset_top = -37.0
+offset_right = 66.5
+offset_bottom = 37.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+alignment = 1
+script = ExtResource("1_t0p1m")
+
+[node name="Title" type="Label" parent="." unique_id=1852269724]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="TitleSep" type="HSeparator" parent="." unique_id=216974669]
+layout_mode = 2
+
+[node name="ButtonsSep" type="HSeparator" parent="." unique_id=909966745]
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="." unique_id=2077175377]
+layout_mode = 2
+alignment = 1
+
+[node name="Cancel" type="Button" parent="Buttons" unique_id=1990229517]
+unique_name_in_owner = true
+layout_mode = 2
+text = "< BACK"
+
+[node name="Sep" type="Control" parent="Buttons" unique_id=853213139]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Proceed" type="Button" parent="Buttons" unique_id=1900788638]
+unique_name_in_owner = true
+layout_mode = 2
+text = "NEXT >"

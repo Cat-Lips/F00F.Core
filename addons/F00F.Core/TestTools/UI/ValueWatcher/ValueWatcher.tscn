@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cdwaunciplhc5"]
+
+[ext_resource type="PackedScene" uid="uid://cllg26jgvexcv" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataView.tscn" id="1_v7gfc"]
+[ext_resource type="Theme" uid="uid://bbnlsy6nlnnqo" path="res://addons/F00F.Core/TestTools/Theme.Debug.tres" id="2_du2iy"]
+[ext_resource type="Script" uid="uid://3bad6jt0lahx" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/ValueWatcher.cs" id="2_tom00"]
+
+[node name="Root" unique_id=40980128 instance=ExtResource("1_v7gfc")]
+theme = ExtResource("2_du2iy")
+script = ExtResource("2_tom00")
+AutoShow = true
+
+[editable path="Panel/Margin/Layout/Scroll"]

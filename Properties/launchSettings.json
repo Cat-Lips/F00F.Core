@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "Run": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot 4.exe",
+      "commandLineArgs": "--debug-collisions --disable-vsync > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Edit": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot 4.exe",
+      "commandLineArgs": "--editor > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Run Server": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot 4.exe",
+      "commandLineArgs": "--server --with-clients=3 > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Run Client": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot 4.exe",
+      "commandLineArgs": "--client --with-clients=2 --with-server > godot.log 2>&1",
+      "workingDirectory": "."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c5j3kl8t084su"]
+
+[ext_resource type="Script" uid="uid://cogdfdx4avmhd" path="res://addons/F00F.Core/ProcGen/WorldShader/WorldShader.cs" id="1_32q0m"]
+
+[node name="World" type="Node3D" unique_id=1089124898]
+script = ExtResource("1_32q0m")

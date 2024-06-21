@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bs31dqh32eurh"]
+
+[ext_resource type="PackedScene" uid="uid://clcgyl7ynxu40" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/Stats/Stats.tscn" id="1_i06lw"]
+[ext_resource type="Script" uid="uid://60sdn3qc4imc" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/Stats/DBG/DBG.cs" id="2_0pouq"]
+
+[node name="DBG" unique_id=725617712 instance=ExtResource("1_i06lw")]
+script = ExtResource("2_0pouq")
+AutoShow = false
+
+[editable path="Panel/Margin/Layout/Scroll"]
