@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://pi47qr00ovco"]
+
+[ext_resource type="PackedScene" uid="uid://cmqj6v4nctwod" path="res://addons/F00F.Core/NEW/Game/Game3D.tscn" id="1_qkyby"]
+[ext_resource type="Script" uid="uid://ddl16addsb32t" path="res://addons/F00F.Core/NEW/TestTools/Test3D.cs" id="2_hcsd1"]
+[ext_resource type="PackedScene" uid="uid://de3yhu17mkqjk" path="res://addons/F00F.Core/NEW/TestTools/UI/Options.tscn" id="3_5stsd"]
+[ext_resource type="PackedScene" uid="uid://dm3au5n83xpuq" path="res://addons/F00F.Core/NEW/TestTools/UI/Settings.tscn" id="4_yt8mq"]
+[ext_resource type="PackedScene" uid="uid://dc30s7m6x7rfm" path="res://addons/F00F.Core/NEW/TestTools/TestArena/TestArena.tscn" id="5_t2k82"]
+[ext_resource type="PackedScene" uid="uid://d2nixf13o5pe2" path="res://addons/F00F.Core/NEW/TestTools/TestTerrain/TestTerrain.tscn" id="6_sb5pu"]
+
+[node name="Root" unique_id=1971865465 instance=ExtResource("1_qkyby")]
+script = ExtResource("2_hcsd1")
+WorldType = 1
+ShowSettingsWithMouse = true
+
+[node name="Preload" type="ResourcePreloader" parent="." index="0" unique_id=557535524]
+resources = [PackedStringArray("TestArena", "TestTerrain"), [ExtResource("5_t2k82"), ExtResource("6_sb5pu")]]
+
+[node name="World" type="Node" parent="." index="1" unique_id=806650860]
+
+[node name="Options" parent="UI" parent_id_path=PackedInt32Array(536397612) index="0" unique_id=947126449 instance=ExtResource("3_5stsd")]
+offset_top = -86.0
+offset_right = 215.0
+
+[node name="Settings" parent="UI" parent_id_path=PackedInt32Array(536397612) index="1" unique_id=2047388148 instance=ExtResource("4_yt8mq")]
+visible = false
+offset_top = -44.0
