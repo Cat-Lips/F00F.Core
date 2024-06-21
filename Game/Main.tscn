@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3 uid="uid://msfk17frtfvp"]
+
+[ext_resource type="PackedScene" uid="uid://bds7513d0ag58" path="res://addons/F00F.Core/Game3D.tscn" id="1_o4fg0"]
+[ext_resource type="Script" path="res://Game/Main.cs" id="2_bdlkm"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/3D/Camera/CameraConfig.cs" id="3_mpo3g"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/3D/Camera/CameraInput.cs" id="4_j8krq"]
+
+[sub_resource type="Resource" id="Resource_5krdx"]
+script = ExtResource("3_mpo3g")
+Speed = 5.0
+Sensitivity = 0.001
+PitchLimit = 1.309
+Offset = Vector3(0, 3, 5)
+Look = Vector3(0, 0, -5)
+
+[sub_resource type="Resource" id="Resource_vg4lj"]
+script = ExtResource("4_j8krq")
+
+[node name="World" instance=ExtResource("1_o4fg0")]
+script = ExtResource("2_bdlkm")
+
+[node name="Camera" parent="." index="1"]
+Config = SubResource("Resource_5krdx")
+Input = SubResource("Resource_vg4lj")
