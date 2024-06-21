@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://gmutahvacwve"]
+
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/3D/TestTools/Tools/TestBody.cs" id="1_mxo5x"]
+
+[node name="TestBody" type="RigidBody3D"]
+script = ExtResource("1_mxo5x")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+
+[node name="Shape" type="CollisionShape3D" parent="."]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwley1st7550q"]
+
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/UI/ProgressDialog/ProgressRequest.cs" id="1_tn47h"]
+
+[node name="HttpRequest" type="HTTPRequest"]
+script = ExtResource("1_tn47h")
