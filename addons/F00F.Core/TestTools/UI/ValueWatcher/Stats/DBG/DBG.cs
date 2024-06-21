@@ -1,0 +1,35 @@
+using Godot;
+
+namespace F00F;
+
+[Tool]
+public partial class DBG : Stats
+{
+    public Node3D Player { get; set => this.Set(ref field, value, OnPlayerSet); }
+
+    #region Godot
+
+    public sealed override void _UnhandledKeyInput(InputEvent e)
+    {
+        if (this.Handle(MyInput.IsActionJustPressed(MyInput.Show), () => Visible = !Visible)) return;
+    }
+
+    #endregion
+
+    private void OnPlayerSet()
+    {
+        if (Player is null)
+            ClearPlayerStats();
+        else AddPlayerStats();
+
+        void ClearPlayerStats()
+            => Clear();
+
+        void AddPlayerStats()
+        {
+            Sep("Player");
+            Add(" - Position", () => Player.GlobalPosition.Rounded());
+            Add(" - Rotation", () => Player.RotationDegrees.Rounded());
+        }
+    }
+}

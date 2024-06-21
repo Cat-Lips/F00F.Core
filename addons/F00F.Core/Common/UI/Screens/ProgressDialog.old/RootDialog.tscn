@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cheep5ce2f4s8"]
+
+[sub_resource type="Resource" id="Resource_stlmk"]
+metadata/__load_path__ = "res://addons/F00F.Core/Common/UI/RootDialog.cs"
+
+[node name="RootDialog" type="Window"]
+title = "Root Dialog"
+initial_position = 2
+visible = false
+wrap_controls = true
+transient = true
+transient_to_focused = true
+exclusive = true
+unresizable = true
+popup_window = true
+keep_title_visible = true
+script = SubResource("Resource_stlmk")
