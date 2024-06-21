@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://clcgyl7ynxu40"]
+
+[ext_resource type="PackedScene" uid="uid://cdwaunciplhc5" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/ValueWatcher.tscn" id="1_fnner"]
+[ext_resource type="Script" uid="uid://ch4d27ux0rlcr" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/Stats/Stats.cs" id="2_tux5o"]
+
+[node name="Stats" unique_id=1821923109 instance=ExtResource("1_fnner")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_right = 0.0
+offset_top = -151.0
+offset_right = 113.0
+grow_horizontal = 1
+grow_vertical = 0
+script = ExtResource("2_tux5o")
+Rounding = 3
+ShowMore = false
+
+[node name="Scroll" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(1051121370) index="0" unique_id=1009012198]
+custom_minimum_size = Vector2(93, 131)
+
+[editable path="Panel/Margin/Layout/Scroll"]

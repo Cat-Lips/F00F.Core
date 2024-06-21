@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c3k4g68lqg3ap"]
+
+[ext_resource type="PackedScene" uid="uid://d20ngb5t3ppwv" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/SlideMenu.tscn" id="1_pet8t"]
+[ext_resource type="Script" uid="uid://dsc62xpqeko1v" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/PlayerMenu.cs" id="2_8x6aw"]
+
+[node name="PlayerMenu" unique_id=1776389307 instance=ExtResource("1_pet8t")]
+script = ExtResource("2_8x6aw")
+
+[node name="Label" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="0" unique_id=1404783892]
+custom_minimum_size = Vector2(49, 31)
+text = "Player"
+
+[node name="PlayerName" type="LineEdit" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="0" unique_id=1996667100]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Player Name"
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="PlayerColor" type="ColorPickerButton" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="1" unique_id=464478577]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player Color"
+edit_alpha = false
+
+[node name="PlayerAvatar" type="OptionButton" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="2" unique_id=90579886]
+unique_name_in_owner = true
+layout_mode = 2

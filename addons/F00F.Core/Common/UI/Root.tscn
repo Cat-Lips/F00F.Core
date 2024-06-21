@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://detue2yxy7yt5"]
+
+[ext_resource type="Script" uid="uid://c38qqex3r5lih" path="res://addons/F00F.Core/Common/UI/Root.cs" id="1_k85mx"]
+
+[node name="Root" type="MarginContainer" unique_id=1486111448]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_k85mx")
+Exclusivity = 2
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=547662129]
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=915796819]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5

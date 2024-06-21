@@ -1,0 +1,63 @@
+env:
+  GODOT_ROOT: https://github.com/godotengine/godot-builds/releases/download
+  GODOT_NAME: 4.6.1-stable
+
+  #DOTNET_SETUP: actions/setup-dotnet@v5 (latest - v5.0.0 - Sep 3)
+  #GIT_CHECKOUT: actions/checkout@v5 (latest - v5.0.0 - Aug 11)
+  #GODOT_EXPORT: firebelley/godot-export@v7.0.0 (latest - Aug 23)
+  #UPLOAD_LOGS:  actions/upload-artifact@v5 (latest - v5.0.0 - Oct 25)
+  #GIT_RELEASE:  ncipollo/release-action@v1 (latest - v1.20.0 - Sep 3)
+
+  # For private repo access add F00F_KEY to /settings/secrets/actions
+  # To create new F00F_KEY, go to personal icon → Settings → Developer settings → Personal access tokens → fine grained (add contents for read only access)
+  # (optional) To create separate keys for select repos, change secrets.F00F_KEY to your new key name and commit the change
+
+on:
+  push:
+    branches:
+      - wip
+
+jobs:
+  ExportGame:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    name: Export Game
+    steps:
+    - name: .NET SETUP
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 9
+        #cache: true
+    - name: GIT CHECKOUT
+      uses: actions/checkout@v5
+    - name: RUN SETUP
+      env:
+        F00F_KEY: ${{secrets.F00F_KEY}}
+      run: |
+        git config --global url."https://$F00F_KEY@github.com/".insteadOf "https://github.com/"
+        if [ -f setup.sh ]; then bash setup.sh; fi
+    - name: GODOT EXPORT
+      id: export
+      uses: firebelley/godot-export@v7.0.0
+      with:
+        godot_executable_download_url: ${{env.GODOT_ROOT}}/${{env.GODOT_NAME}}/Godot_v${{env.GODOT_NAME}}_mono_linux_x86_64.zip
+        godot_export_templates_download_url: ${{env.GODOT_ROOT}}/${{env.GODOT_NAME}}/Godot_v${{env.GODOT_NAME}}_mono_export_templates.tpz
+        relative_project_path: ./
+        archive_output: true
+        verbose: true
+        cache: true
+    - name: UPLOAD LOGS
+      uses: actions/upload-artifact@v5
+      with:
+        name: msbuild_log
+        path: /home/runner/.local/share/godot/mono/build_logs/*_ExportRelease/msbuild_log.txt
+        retention-days: 1
+    - name: GIT RELEASE
+      uses: ncipollo/release-action@v1
+      with:
+        tag: WIP
+        prerelease: true
+        allowUpdates: true
+        removeArtifacts: true
+        updateOnlyUnreleased: true
+        artifacts: ${{steps.export.outputs.archive_directory}}/*

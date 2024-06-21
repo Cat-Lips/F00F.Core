@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://sjrvyfyw2t3m"]
+
+[ext_resource type="Script" uid="uid://dau20qdr55ds2" path="res://addons/F00F.Core/Network/Network.cs" id="1_wlork"]
+
+[node name="Network" type="Node" unique_id=1792498073]
+script = ExtResource("1_wlork")
