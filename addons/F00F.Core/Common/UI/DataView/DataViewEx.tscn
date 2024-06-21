@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddd0e7ovome7g"]
+
+[ext_resource type="PackedScene" uid="uid://cllg26jgvexcv" path="res://addons/F00F.Core/Common/UI/DataView/DataView.tscn" id="1_o8taf"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/UI/DataView/DataViewEx.cs" id="2_ryrth"]
+
+[node name="Root" instance=ExtResource("1_o8taf")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_bottom = 0.0
+offset_left = -28.0
+offset_bottom = 75.0
+grow_horizontal = 0
+grow_vertical = 1
+script = ExtResource("2_ryrth")
+
+[node name="Title" type="Label" parent="Panel/Margin/Layout" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Sep1" type="HSeparator" parent="Panel/Margin/Layout" index="1"]
+layout_mode = 2
+
+[node name="Sep2" type="HSeparator" parent="Panel/Margin/Layout" index="3"]
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/Margin/Layout" index="4"]
+layout_mode = 2
+
+[editable path="Panel/Margin/Layout/Scroll"]
