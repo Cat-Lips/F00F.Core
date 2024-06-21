@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://65wqobdnmoqf"]
+
+[ext_resource type="Script" uid="uid://c6vlhvfwvwjjc" path="res://addons/F00F.Core/NEW/Game.cs" id="1_fsg7h"]
+
+[node name="Root" type="Node" unique_id=1971865465]
+script = ExtResource("1_fsg7h")

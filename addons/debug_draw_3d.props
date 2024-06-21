@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);DEBUG_DRAW</DefineConstants>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bi25yukkiaogr"]
+
+[ext_resource type="Script" uid="uid://c1nemdf8xmbyg" path="res://addons/F00F.Core/NEW/MyCam/Camera.cs" id="1_3koi0"]
+
+[node name="Camera" type="Camera3D" unique_id=346499136]
+doppler_tracking = 1
+current = true
+fov = 85.0
+near = 0.001
+far = 1000.0
+script = ExtResource("1_3koi0")

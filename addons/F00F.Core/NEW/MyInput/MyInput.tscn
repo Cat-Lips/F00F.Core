@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dnv14yjb1cg1g"]
+
+[ext_resource type="Script" uid="uid://hkoqlis3ylxn" path="res://addons/F00F.Core/NEW/MyInput/MyInput.cs" id="1_bj04p"]
+
+[node name="MyInput" type="Node" unique_id=1382070672]
+process_mode = 3
+script = ExtResource("1_bj04p")
