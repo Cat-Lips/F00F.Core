@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://daffykfuo15hd"]
+
+[ext_resource type="PackedScene" uid="uid://dwpqq58bioow8" path="res://addons/F00F.Core/Common/UI/RootPopup.tscn" id="1_26tih"]
+[ext_resource type="Script" uid="uid://cy4i5i7trss11" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/MainMenu2.cs" id="2_8pm75"]
+[ext_resource type="PackedScene" uid="uid://cfxay78p0rsc6" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/MainMenu2_Layout.tscn" id="3_psxgu"]
+
+[node name="MainMenu" instance=ExtResource("1_26tih")]
+layer = 3
+script = ExtResource("2_8pm75")
+
+[node name="Root" parent="." index="0"]
+offset_left = -121.5
+offset_top = -90.0
+offset_right = 121.5
+offset_bottom = 90.0
+
+[node name="Scroll" parent="Root/Panel/Margin" index="0"]
+custom_minimum_size = Vector2(223, 160)
+
+[node name="Margin" parent="Root/Panel/Margin/Scroll" index="0"]
+theme_override_constants/margin_right = 8
+
+[node name="Layout" parent="Root/Panel/Margin/Scroll/Margin" index="0" instance=ExtResource("3_psxgu")]
+layout_mode = 2
+
+[editable path="Root"]
+[editable path="Root/Panel/Margin/Scroll"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://ox6rt0tt407w"]
+
+[ext_resource type="Script" uid="uid://b4bh7wkfefgsi" path="res://addons/F00F.Core/UI/GUI.cs" id="1_33hc5"]
+[ext_resource type="PackedScene" uid="uid://glf5fs8xnm8o" path="res://addons/F00F.Core/UI/Misc/PlayerList.tscn" id="2_qpibf"]
+[ext_resource type="PackedScene" uid="uid://beg6e0rlv57e3" path="res://addons/F00F.Core/UI/Misc/QuickHelp.tscn" id="4_xt6xt"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_33hc5")
+
+[node name="PlayerList" parent="." instance=ExtResource("2_qpibf")]
+
+[node name="QuickHelp" parent="." instance=ExtResource("4_xt6xt")]
