@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://tgnum7qeyfb5"]
+
+[ext_resource type="Script" uid="uid://djhtbn7bf5ku2" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/StrEdit.cs" id="1_gev73"]
+
+[node name="StrEdit" type="LineEdit" unique_id=3430171]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.25
+offset_top = -15.5
+offset_right = 34.25
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+context_menu_enabled = false
+emoji_menu_enabled = false
+caret_blink = true
+script = ExtResource("1_gev73")

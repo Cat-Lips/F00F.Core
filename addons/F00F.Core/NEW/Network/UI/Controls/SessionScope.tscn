@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://njhdlbeiq1p5"]
+
+[ext_resource type="PackedScene" uid="uid://g3d6eqvkhr28" path="res://addons/F00F.Core/Common/UI/Controls/EnumEdit/EnumEdit.tscn" id="1_w425p"]
+[ext_resource type="Script" uid="uid://dypjswb0k3nc3" path="res://addons/F00F.Core/NEW/Network/UI/Controls/SessionScope.cs" id="2_ft5p6"]
+
+[node name="SessionScope" unique_id=1976535817 instance=ExtResource("1_w425p")]
+offset_left = -62.0
+offset_top = -15.5
+offset_right = 62.0
+offset_bottom = 15.5
+script = ExtResource("2_ft5p6")

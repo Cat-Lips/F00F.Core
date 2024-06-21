@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cnpc6fq18s7id"]
+
+[ext_resource type="Script" uid="uid://bti5odm4lf3ft" path="res://addons/F00F.Core/NEW/Network/UI/Controls/ActiveProviders.cs" id="1_2mqrh"]
+[ext_resource type="PackedScene" uid="uid://bsbn2qu2ttyg7" path="res://addons/F00F.Core/Common/UI/Controls/KeyEdit/KeyEdit.tscn" id="1_r284w"]
+
+[node name="ActiveProviders" unique_id=1976535817 instance=ExtResource("1_r284w")]
+script = ExtResource("1_2mqrh")

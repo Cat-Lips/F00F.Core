@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bb8oq8wv5pon2"]
+
+[ext_resource type="Script" uid="uid://cxwaaif8viygk" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Direct/DirectNetwork.cs" id="1_0nvtf"]
+
+[node name="IP" type="Node" unique_id=1280739974]
+script = ExtResource("1_0nvtf")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bb3vjbpjmxp1u"]
+
+[ext_resource type="PackedScene" uid="uid://tgnum7qeyfb5" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/StrEdit.tscn" id="1_340se"]
+[ext_resource type="Script" uid="uid://cch7ay84nx1kw" path="res://addons/F00F.Core/NEW/Network/UI/Controls/GameDescription.cs" id="2_gjf8s"]
+
+[node name="GameDescription" unique_id=3430171 instance=ExtResource("1_340se")]
+tooltip_text = "Game Description"
+placeholder_text = "Game Description"
+editable = false
+script = ExtResource("2_gjf8s")

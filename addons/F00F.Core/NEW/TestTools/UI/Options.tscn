@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://de3yhu17mkqjk"]
+
+[ext_resource type="PackedScene" uid="uid://cdwaunciplhc5" path="res://addons/F00F.Core/NEW/TestTools/UI/ValueWatcher/ValueWatcher.tscn" id="1_w07ox"]
+[ext_resource type="Script" uid="uid://dq5cwdphx1qdt" path="res://addons/F00F.Core/NEW/TestTools/UI/Options.cs" id="2_1yhot"]
+
+[node name="Options" unique_id=40980128 instance=ExtResource("1_w07ox")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_right = 0.0
+offset_top = -20.0
+offset_right = 20.0
+grow_horizontal = 1
+grow_vertical = 0
+script = ExtResource("2_1yhot")
+
+[editable path="Panel/Margin/Layout/Scroll"]

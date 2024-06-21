@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bo7yhcyuotxqp"]
+
+[ext_resource type="PackedScene" uid="uid://blk2vxfr5pj0s" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/RegEdit.tscn" id="1_xlklf"]
+[ext_resource type="Script" uid="uid://cnn3dqaon4gq7" path="res://addons/F00F.Core/Common/UI/Controls/IntEdit/IntEdit.cs" id="2_fl17t"]
+
+[node name="IntEdit" unique_id=3430171 instance=ExtResource("1_xlklf")]
+script = ExtResource("2_fl17t")

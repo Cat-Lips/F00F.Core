@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cvupwpdihf7ox"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0e7ovome7g" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataViewEx.tscn" id="1_i7sov"]
+[ext_resource type="Script" uid="uid://f3wtjg4pfbmr" path="res://addons/F00F.Core/NEW/Network/UI/Screens/PlayerList.cs" id="2_7ls8i"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="3_rp43j"]
+
+[node name="PlayerList" unique_id=1414288593 instance=ExtResource("1_i7sov")]
+offset_left = -158.0
+offset_bottom = 90.0
+script = ExtResource("2_7ls8i")
+Exclusivity = 0
+
+[node name="Title" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(1051121370) index="0" unique_id=1030496282]
+text = "Players"
+horizontal_alignment = 1
+
+[node name="NetworkStatus" parent="Panel/Margin/Layout/Buttons" parent_id_path=PackedInt32Array(648970467) index="0" unique_id=235635835 instance=ExtResource("3_rp43j")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="StatusSep" type="VSeparator" parent="Panel/Margin/Layout/Buttons" parent_id_path=PackedInt32Array(648970467) index="1" unique_id=418569808]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NetworkState" type="Label" parent="Panel/Margin/Layout/Buttons" parent_id_path=PackedInt32Array(648970467) index="2" unique_id=498032000]
+unique_name_in_owner = true
+layout_mode = 2
+text = "(no connection)"
+
+[node name="ToggleButton" type="TextureButton" parent="Panel/Margin/Layout/Buttons/NetworkState" index="0" unique_id=2057630273]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+
+[editable path="Panel/Margin/Layout/Scroll"]

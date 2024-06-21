@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://bfht0afwgivvh"]
+
+[ext_resource type="Script" uid="uid://brgdqqtv74m41" path="res://addons/F00F.Core/NEW/Network/UI/Controls/SessionFilter.cs" id="1_8opyo"]
+[ext_resource type="PackedScene" uid="uid://cleiqtdk4gx2b" path="res://addons/F00F.Core/NEW/Network/UI/Controls/DistanceFilterSelect.tscn" id="1_paj8e"]
+[ext_resource type="PackedScene" uid="uid://tgnum7qeyfb5" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/StrEdit.tscn" id="2_8opyo"]
+[ext_resource type="Texture2D" uid="uid://ccm6ukdv2byjy" path="res://addons/F00F.Core/Utilities/Status/Assets/Refresh.svg" id="4_epung"]
+
+[node name="SessionFilter" type="HBoxContainer" unique_id=131675819]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -550.0
+offset_top = -15.5
+offset_right = 550.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8opyo")
+
+[node name="Title" type="Label" parent="." unique_id=1873897]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Filter By"
+
+[node name="Sep1" type="VSeparator" parent="." unique_id=459851831]
+layout_mode = 2
+
+[node name="SessionNameBtn" type="Button" parent="." unique_id=1561686610]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+toggle_mode = true
+text = "Session Name"
+flat = true
+
+[node name="SessionNameEdit" parent="." unique_id=3430171 instance=ExtResource("2_8opyo")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "<inactive>"
+alignment = 2
+editable = false
+
+[node name="Sep2" type="VSeparator" parent="." unique_id=1382410691]
+layout_mode = 2
+
+[node name="SessionOwnerBtn" type="Button" parent="." unique_id=92576585]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+toggle_mode = true
+text = "Session Owner"
+flat = true
+
+[node name="SessionOwnerEdit" parent="." unique_id=1820233494 instance=ExtResource("2_8opyo")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "<inactive>"
+alignment = 2
+editable = false
+
+[node name="Sep3" type="VSeparator" parent="." unique_id=328878490]
+layout_mode = 2
+
+[node name="DistanceFilterBtn" type="Button" parent="." unique_id=1888147728]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+toggle_mode = true
+text = "Distance Filter"
+flat = true
+
+[node name="DistanceFilterEdit" parent="." unique_id=1309663514 instance=ExtResource("2_8opyo")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "<inactive>"
+alignment = 2
+editable = false
+
+[node name="DistanceFilterSelect" parent="DistanceFilterEdit" unique_id=1976535817 instance=ExtResource("1_paj8e")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="Sep4" type="VSeparator" parent="." unique_id=929917961]
+layout_mode = 2
+
+[node name="MaxSearchResultsBtn" type="Button" parent="." unique_id=340861442]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+toggle_mode = true
+text = "Max Search Results"
+flat = true
+
+[node name="MaxSearchResultsEdit" parent="." unique_id=103149046 instance=ExtResource("2_8opyo")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "<inactive>"
+alignment = 2
+editable = false
+
+[node name="Sep5" type="VSeparator" parent="." unique_id=612640446]
+layout_mode = 2
+
+[node name="OpenOnly" type="CheckButton" parent="." unique_id=1510070148]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+button_pressed = true
+text = "Open Only"
+
+[node name="Sep6" type="VSeparator" parent="." unique_id=1184067640]
+layout_mode = 2
+
+[node name="ARC" type="AspectRatioContainer" parent="." unique_id=1251537087]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Refresh" type="Button" parent="ARC" unique_id=893694496]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Refresh"
+icon = ExtResource("4_epung")

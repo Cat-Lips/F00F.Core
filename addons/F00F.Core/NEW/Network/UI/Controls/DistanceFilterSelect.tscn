@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cleiqtdk4gx2b"]
+
+[ext_resource type="PackedScene" uid="uid://g3d6eqvkhr28" path="res://addons/F00F.Core/Common/UI/Controls/EnumEdit/EnumEdit.tscn" id="1_ghec7"]
+[ext_resource type="Script" uid="uid://bjexw7u841e24" path="res://addons/F00F.Core/NEW/Network/UI/Controls/DistanceFilterSelect.cs" id="2_jiq0p"]
+
+[node name="DistanceFilterSelect" unique_id=1976535817 instance=ExtResource("1_ghec7")]
+script = ExtResource("2_jiq0p")

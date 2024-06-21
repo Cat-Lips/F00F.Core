@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bm1682ynbd0mu"]
+
+[ext_resource type="Script" uid="uid://cejugv6pl25f8" path="res://addons/F00F.Core/NEW/Network/Core/Protocols/Godot/GodotNetwork.cs" id="1_bxahw"]
+
+[node name="Godot" type="Node" unique_id=877069343]
+script = ExtResource("1_bxahw")

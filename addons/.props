@@ -1,0 +1,4 @@
+<Project>
+  <Import Project="EOS.SDK.NET/EOS.SDK.NET.props" Condition="Exists('EOS.SDK.NET')" />
+  <Import Project="Steamworks.NET/Steamworks.NET.props" Condition="Exists('Steamworks.NET')" />
+</Project>

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c3vdff87gds6i"]
+
+[ext_resource type="Script" uid="uid://d21vgh6fmrdms" path="res://addons/F00F.Core/NEW/Network/UI/Screens/SessionBrowser.cs" id="1_5nd7e"]
+[ext_resource type="PackedScene" uid="uid://bfht0afwgivvh" path="res://addons/F00F.Core/NEW/Network/UI/Controls/SessionFilter.tscn" id="1_hsm2f"]
+
+[node name="SessionBrowser" type="VBoxContainer" unique_id=1564532277]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -550.0
+offset_top = -15.5
+offset_right = 550.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5nd7e")
+
+[node name="SessionFilter" parent="." unique_id=131675819 instance=ExtResource("1_hsm2f")]
+layout_mode = 2
