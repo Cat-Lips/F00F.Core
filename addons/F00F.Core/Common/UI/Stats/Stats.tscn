@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://clcgyl7ynxu40"]
+
+[ext_resource type="PackedScene" uid="uid://cdwaunciplhc5" path="res://addons/F00F.Core/Common/UI/ValueWatcher/ValueWatcher.tscn" id="1_fnner"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/UI/Stats/Stats.cs" id="2_tux5o"]
+
+[node name="Stats" instance=ExtResource("1_fnner")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 144.0
+offset_bottom = 97.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("2_tux5o")
+
+[node name="Scroll" parent="Panel/Margin/Layout" index="0"]
+custom_minimum_size = Vector2(124, 77)
+
+[editable path="Panel/Margin/Layout/Scroll"]

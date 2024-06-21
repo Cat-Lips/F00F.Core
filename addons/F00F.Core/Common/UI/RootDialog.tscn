@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cheep5ce2f4s8"]
+
+[ext_resource type="Script" path="res://addons/F00F.Core/Common/UI/RootDialog.cs" id="1_n8kyq"]
+
+[node name="RootDialog" type="Window"]
+title = "Dialog"
+initial_position = 2
+wrap_controls = true
+transient = true
+exclusive = true
+unresizable = true
+popup_window = true
+keep_title_visible = true
+script = ExtResource("1_n8kyq")

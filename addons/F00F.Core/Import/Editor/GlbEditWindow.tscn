@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwqofdqm1e4qy"]
+
+[ext_resource type="PackedScene" uid="uid://w62mfjjkk1ru" path="res://addons/F00F.Core/Import/Editor/GlbEdit.tscn" id="1_p7mg7"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Import/Editor/GlbEditWindow.cs" id="1_vysky"]
+
+[node name="GlbEditWindow" type="Window"]
+script = ExtResource("1_vysky")
+
+[node name="GlbEdit" parent="." instance=ExtResource("1_p7mg7")]
