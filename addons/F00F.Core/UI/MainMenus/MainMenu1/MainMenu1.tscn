@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ctr351crtkost"]
+
+[ext_resource type="PackedScene" uid="uid://detue2yxy7yt5" path="res://addons/F00F.Core/Common/UI/Root.tscn" id="1_5mnyt"]
+[ext_resource type="Script" uid="uid://cqwpbfg0lrvhk" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/MainMenu1.cs" id="2_k0fax"]
+[ext_resource type="PackedScene" uid="uid://bth2feuqci7vn" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/ServerMenu.tscn" id="3_qltt6"]
+[ext_resource type="PackedScene" uid="uid://bv3074j5i8mx2" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/ClientMenu.tscn" id="4_qangr"]
+[ext_resource type="PackedScene" uid="uid://c3k4g68lqg3ap" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/PlayerMenu.tscn" id="5_qtaeo"]
+[ext_resource type="PackedScene" uid="uid://dby4yx7jehu5b" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/GameMenu.tscn" id="6_etfe0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vod8a"]
+
+[node name="MainMenu" unique_id=959444214 instance=ExtResource("1_5mnyt")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 92.0
+offset_bottom = 174.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("2_k0fax")
+Margin = 0
+
+[node name="Panel" parent="." index="0" unique_id=547662129]
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vod8a")
+
+[node name="Layout" type="VBoxContainer" parent="Panel/Margin" parent_id_path=PackedInt32Array(915796819) index="0" unique_id=2018010634]
+layout_mode = 2
+theme_override_constants/separation = -10
+
+[node name="ServerMenu" parent="Panel/Margin/Layout" index="0" unique_id=1890329343 instance=ExtResource("3_qltt6")]
+unique_name_in_owner = true
+layout_mode = 2
+Margin = 5
+
+[node name="ClientMenu" parent="Panel/Margin/Layout" index="1" unique_id=926916605 instance=ExtResource("4_qangr")]
+unique_name_in_owner = true
+layout_mode = 2
+Margin = 5
+
+[node name="PlayerMenu" parent="Panel/Margin/Layout" index="2" unique_id=627065247 instance=ExtResource("5_qtaeo")]
+unique_name_in_owner = true
+layout_mode = 2
+Margin = 5
+
+[node name="GameMenu" parent="Panel/Margin/Layout" index="3" unique_id=1829946676 instance=ExtResource("6_etfe0")]
+unique_name_in_owner = true
+layout_mode = 2
+Margin = 5

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dby4yx7jehu5b"]
+
+[ext_resource type="PackedScene" uid="uid://d20ngb5t3ppwv" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/SlideMenu.tscn" id="1_qb7np"]
+[ext_resource type="Script" uid="uid://ckly08qcxqage" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/GameMenu.cs" id="2_1ktfl"]
+
+[node name="GameMenu" unique_id=990508112 instance=ExtResource("1_qb7np")]
+script = ExtResource("2_1ktfl")
+
+[node name="Label" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="0" unique_id=1404783892]
+custom_minimum_size = Vector2(46, 31)
+text = "Game"
+
+[node name="GameOptions" type="MenuButton" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="0" unique_id=1376194340]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Game Options"
+switch_on_hover = true
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="1" unique_id=321347182]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="QuitGame" type="Button" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="2" unique_id=1512026634]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit Game"

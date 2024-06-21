@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dl1khbhae1ygj"]
+
+[ext_resource type="Script" uid="uid://cbb51bjqj3u5s" path="res://addons/F00F.Core/Game2D.cs" id="1_j4eku"]
+[ext_resource type="PackedScene" uid="uid://cc537g3230cne" path="res://addons/F00F.Core/Game.tscn" id="1_n1g4t"]
+[ext_resource type="PackedScene" uid="uid://caef8l4p5fmnu" path="res://addons/F00F.Core/Common/2D/Camera/Camera2D.tscn" id="2_mxguc"]
+
+[node name="Root" unique_id=304787131 instance=ExtResource("1_n1g4t")]
+script = ExtResource("1_j4eku")
+
+[node name="Camera" parent="." index="1" unique_id=547172568 instance=ExtResource("2_mxguc")]

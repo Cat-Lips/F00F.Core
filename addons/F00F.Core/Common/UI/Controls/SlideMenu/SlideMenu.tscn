@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d20ngb5t3ppwv"]
+
+[ext_resource type="PackedScene" uid="uid://detue2yxy7yt5" path="res://addons/F00F.Core/Common/UI/Root.tscn" id="1_sv3o0"]
+[ext_resource type="Script" uid="uid://c3tkqd832rgiv" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/SlideMenu.cs" id="2_ewyem"]
+
+[node name="Root" unique_id=1035401394 instance=ExtResource("1_sv3o0")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 34.0
+offset_bottom = 43.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_horizontal = 0
+script = ExtResource("2_ewyem")
+Margin = 0
+
+[node name="Layout" type="HBoxContainer" parent="Panel/Margin" parent_id_path=PackedInt32Array(915796819) index="0" unique_id=131994325]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/Margin/Layout" index="0" unique_id=1404783892]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(45, 0)
+layout_mode = 2
+text = "Menu"
+vertical_alignment = 1
+
+[node name="Sep" type="Label" parent="Panel/Margin/Layout" index="1" unique_id=69989650]
+layout_mode = 2
+text = " > "
+vertical_alignment = 1
+
+[node name="Items" type="HBoxContainer" parent="Panel/Margin/Layout" index="2" unique_id=1654192794]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
