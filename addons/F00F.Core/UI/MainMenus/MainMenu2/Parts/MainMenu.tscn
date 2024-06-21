@@ -1,0 +1,168 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfxay78p0rsc6"]
+
+[ext_resource type="Script" uid="uid://bdvl427rumqcu" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/MainMenu.cs" id="1_f76dk"]
+[ext_resource type="ButtonGroup" uid="uid://ccpbgbemn5wbq" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/NetworkButtonGroup.tres" id="1_fwtim"]
+[ext_resource type="PackedScene" uid="uid://wu50y7o6vwpr" path="res://addons/F00F.Core/Network/UI/PortEdit.tscn" id="1_vbaur"]
+
+[node name="Layout" type="VBoxContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.5
+offset_top = -200.5
+offset_right = 107.5
+offset_bottom = 200.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f76dk")
+
+[node name="Go" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "GO!"
+
+[node name="NetworkSep" type="HSeparator" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ServerToggle" type="CheckButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+button_group = ExtResource("1_fwtim")
+text = "Host"
+
+[node name="ServerMenu" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="ServerAddress" type="LineEdit" parent="ServerMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+editable = false
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="ServerPort" parent="ServerMenu" instance=ExtResource("1_vbaur")]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 49152.0
+max_value = 65535.0
+value = 59971.0
+
+[node name="ClientToggle" type="CheckButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+button_group = ExtResource("1_fwtim")
+text = "Join"
+
+[node name="ClientMenu" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+alignment = 2
+
+[node name="ConnectAddress" type="LineEdit" parent="ClientMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="ConnectPort" parent="ClientMenu" instance=ExtResource("1_vbaur")]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 49152.0
+max_value = 65535.0
+value = 59971.0
+
+[node name="ConfigSep" type="HSeparator" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PlayerSetupToggle" type="CheckButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player Setup"
+
+[node name="PlayerSetupMenu" type="GridContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+columns = 2
+
+[node name="PlayerNameLabel" type="Label" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Name"
+vertical_alignment = 1
+
+[node name="PlayerName" type="LineEdit" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Player Name"
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="PlayerColorLabel" type="Label" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Color"
+vertical_alignment = 1
+
+[node name="PlayerColor" type="ColorPickerButton" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Player Color"
+edit_alpha = false
+
+[node name="PlayerAvatarLabel" type="Label" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Avatar"
+vertical_alignment = 1
+
+[node name="PlayerAvatar" type="OptionButton" parent="PlayerSetupMenu"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GameOptionsToggle" type="CheckButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Game Options"
+
+[node name="GameOptionsMenu" type="GridContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+columns = 2
+
+[node name="ButtonsSep" type="HSeparator" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Help" type="Button" parent="Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Help"
+
+[node name="Sep" type="VSeparator" parent="Buttons"]
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Exit"
