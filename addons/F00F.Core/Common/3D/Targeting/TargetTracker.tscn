@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq2jhr55b0bmd"]
+
+[ext_resource type="Script" uid="uid://cmpidy4iicfcn" path="res://addons/F00F.Core/Common/3D/Targeting/TargetTracker.cs" id="1_ro2sw"]
+[ext_resource type="Texture2D" uid="uid://dd13yuqk4x6e8" path="res://Assets/Textures/kenney_crosshair-pack/PNG/White/crosshair180.png" id="2_ovxb7"]
+[ext_resource type="Texture2D" uid="uid://o7x81sgemhax" path="res://Assets/Textures/kenney_crosshair-pack/PNG/White/crosshair022.png" id="3_wamu2"]
+
+[node name="TargetTracker" type="Node3D"]
+script = ExtResource("1_ro2sw")
+
+[node name="HUD" type="CenterContainer" parent="."]
+unique_name_in_owner = true
+use_top_left = true
+
+[node name="OnScreen" type="TextureRect" parent="HUD"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.15686275)
+layout_mode = 2
+texture = ExtResource("2_ovxb7")
+
+[node name="OffScreen" type="TextureRect" parent="HUD"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.47058824)
+layout_mode = 2
+texture = ExtResource("3_wamu2")
