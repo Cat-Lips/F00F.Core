@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bixp13fumbxgd"]
+
+[ext_resource type="PackedScene" uid="uid://dvn0uxc0ujsvj" path="res://addons/F00F.Core/Common/UI/RootView.tscn" id="1_bfx4o"]
+[ext_resource type="Script" uid="uid://dv0b5ispvkfd" path="res://addons/F00F.Core/NEW/Network/UI/Screens/SessionInfo.cs" id="2_7ls8i"]
+[ext_resource type="PackedScene" uid="uid://cridwxfw0mlo8" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/PlayerList.tscn" id="3_ac6ei"]
+[ext_resource type="PackedScene" uid="uid://dma0b84oowtoj" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionStatus.tscn" id="4_mwn4b"]
+
+[node name="SessionInfo" unique_id=1486111448 instance=ExtResource("1_bfx4o")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -20.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 1
+script = ExtResource("2_7ls8i")
+Content = ExtResource("3_ac6ei")
+Buttons = ExtResource("4_mwn4b")
+
+[node name="Scroll" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(314105349) index="2" unique_id=959850152]
+custom_minimum_size = Vector2(0, 0)
+
+[editable path="Panel/Margin/Layout/Scroll"]

@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://c3vdff87gds6i"]
+
+[ext_resource type="Script" uid="uid://bud7cfrt2i1em" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionSearch.cs" id="1_dwb35"]
+[ext_resource type="PackedScene" uid="uid://dnjp5fbve2700" path="res://addons/F00F.Core/NEW/Network/UI/Screens/JoinGame.tscn" id="1_ol22v"]
+[ext_resource type="PackedScene" uid="uid://bfht0afwgivvh" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionFilter.tscn" id="2_ol22v"]
+[ext_resource type="PackedScene" uid="uid://cqj30oitk218r" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionList.tscn" id="3_f4fx8"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="4_f4fx8"]
+[ext_resource type="PackedScene" uid="uid://d0s7xpqsn1qq" path="res://addons/F00F.Core/Common/UI/Controls/SunkLabel/SunkLabel.tscn" id="6_fvxl2"]
+
+[node name="SessionSearch" type="VBoxContainer" unique_id=194772026]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -225.5
+offset_right = 195.0
+offset_bottom = 225.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dwb35")
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=2076653939]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="JoinGame" parent="Header" unique_id=1888813347 instance=ExtResource("1_ol22v")]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 0
+
+[node name="Sep" type="VSeparator" parent="Header" unique_id=373594702]
+layout_mode = 2
+
+[node name="SessionFilter" parent="Header" unique_id=131675819 instance=ExtResource("2_ol22v")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+columns = 2
+CanApply = false
+Orientation = 1
+
+[node name="Sep1" type="HSeparator" parent="." unique_id=471512888]
+layout_mode = 2
+
+[node name="SessionList" parent="." unique_id=1270554405 instance=ExtResource("3_f4fx8")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Sep2" type="HSeparator" parent="." unique_id=2110264595]
+layout_mode = 2
+
+[node name="Footer" type="HBoxContainer" parent="." unique_id=1306502548]
+layout_mode = 2
+
+[node name="StatusBar" parent="Footer" unique_id=235635835 instance=ExtResource("4_f4fx8")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InfoLabel" parent="Footer" unique_id=564830909 instance=ExtResource("6_fvxl2")]
+unique_name_in_owner = true
+layout_mode = 2
+expand_to_text_length = true

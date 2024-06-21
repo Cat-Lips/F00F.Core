@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dma0b84oowtoj"]
+
+[ext_resource type="PackedScene" uid="uid://dl0cgqssb0f0o" path="res://addons/F00F.Core/Common/UI/Controls/SlideBar/SlideBar.tscn" id="1_1a1pq"]
+[ext_resource type="Script" uid="uid://b4wc1lckyij38" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionStatus.cs" id="2_4yivu"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="3_mgjhp"]
+
+[node name="SessionStatus" unique_id=1130560122 instance=ExtResource("1_1a1pq")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -81.0
+offset_right = 0.0
+grow_horizontal = 0
+alignment = 2
+reverse_sort = true
+script = ExtResource("2_4yivu")
+TitleText = "STATUS"
+
+[node name="Title" parent="." index="0" unique_id=442716041]
+text = "STATUS"
+
+[node name="Sep" parent="." index="1" unique_id=242242498]
+text = " < "
+
+[node name="Content" parent="." index="2" unique_id=478299627]
+alignment = 2
+reverse_sort = true
+
+[node name="StatusBar" parent="Content" index="0" unique_id=235635835 instance=ExtResource("3_mgjhp")]
+layout_mode = 2
+alignment = 2
+reverse_sort = true

@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "Run": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot.exe",
+      "commandLineArgs": "--debug-collisions > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Edit": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot.exe",
+      "commandLineArgs": "--editor > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Run Server": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot.exe",
+      "commandLineArgs": "--server --with-clients=1 > godot.log 2>&1",
+      "workingDirectory": "."
+    },
+    "Run Client": {
+      "commandName": "Executable",
+      "executablePath": "../.godot/Godot 4/Godot.exe",
+      "commandLineArgs": "--client --with-server --with-clients=2 > godot.log 2>&1",
+      "workingDirectory": "."
+    }
+  }
+}

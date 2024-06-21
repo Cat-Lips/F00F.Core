@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://pi47qr00ovco"]
+
+[ext_resource type="PackedScene" uid="uid://cmqj6v4nctwod" path="res://addons/F00F.Core/NEW/Game/Game3D.tscn" id="1_qkyby"]
+[ext_resource type="Script" uid="uid://ddl16addsb32t" path="res://addons/F00F.Core/NEW/TestTools/Test3D.cs" id="2_hcsd1"]
+[ext_resource type="PackedScene" uid="uid://de3yhu17mkqjk" path="res://addons/F00F.Core/NEW/TestTools/UI/Options.tscn" id="3_5stsd"]
+[ext_resource type="PackedScene" uid="uid://dm3au5n83xpuq" path="res://addons/F00F.Core/NEW/TestTools/UI/Settings.tscn" id="4_yt8mq"]
+[ext_resource type="PackedScene" uid="uid://dc30s7m6x7rfm" path="res://addons/F00F.Core/NEW/TestTools/TestArena/TestArena.tscn" id="5_t2k82"]
+[ext_resource type="StyleBox" uid="uid://draavm7jesq4m" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Disabled.tres" id="6_lwyun"]
+[ext_resource type="PackedScene" uid="uid://d2nixf13o5pe2" path="res://addons/F00F.Core/NEW/TestTools/TestTerrain/TestTerrain.tscn" id="6_sb5pu"]
+[ext_resource type="StyleBox" uid="uid://dba08eba1hqgv" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Focus.tres" id="7_6ownw"]
+[ext_resource type="PackedScene" uid="uid://bixp13fumbxgd" path="res://addons/F00F.Core/NEW/Network/UI/Screens/SessionInfo.tscn" id="7_sb5pu"]
+[ext_resource type="StyleBox" uid="uid://ccw7kjwwll4qo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Hover.tres" id="8_7gqbq"]
+[ext_resource type="StyleBox" uid="uid://85r8gfh7cju0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Normal.tres" id="9_7ly0g"]
+[ext_resource type="StyleBox" uid="uid://bl16371kv713t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Pressed.tres" id="10_anfq7"]
+[ext_resource type="StyleBox" uid="uid://btst06pkt7eo0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Focus.tres" id="11_nh04c"]
+[ext_resource type="StyleBox" uid="uid://bqvdbus42yxos" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Normal.tres" id="12_0p3sp"]
+[ext_resource type="StyleBox" uid="uid://biko5dwx1m26t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.ReadOnly.tres" id="13_b6ywj"]
+[ext_resource type="PackedScene" uid="uid://ccbh5dsf23oat" path="res://addons/F00F.Core/Common/UI/Controls/DataGrid/DataGrid.tscn" id="16_nh04c"]
+[ext_resource type="Script" uid="uid://6uf2nhu2d05o" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/PlayerList.cs" id="17_0p3sp"]
+[ext_resource type="PackedScene" uid="uid://dl0cgqssb0f0o" path="res://addons/F00F.Core/Common/UI/Controls/SlideBar/SlideBar.tscn" id="18_b6ywj"]
+[ext_resource type="Script" uid="uid://b4wc1lckyij38" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionStatus.cs" id="19_kfo5j"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="20_bxyeu"]
+
+[sub_resource type="Theme" id="Theme_kfo5j"]
+default_font_size = 8
+BoxContainer/constants/separation = 1
+Button/constants/icon_max_width = 12
+Button/styles/disabled = ExtResource("6_lwyun")
+Button/styles/focus = ExtResource("7_6ownw")
+Button/styles/hover = ExtResource("8_7gqbq")
+Button/styles/normal = ExtResource("9_7ly0g")
+Button/styles/pressed = ExtResource("10_anfq7")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+LineEdit/font_sizes/font_size = 6
+LineEdit/styles/focus = ExtResource("11_nh04c")
+LineEdit/styles/normal = ExtResource("12_0p3sp")
+LineEdit/styles/read_only = ExtResource("13_b6ywj")
+SpinBox/constants/field_and_buttons_separation = -2
+SpinBoxInnerLineEdit/base_type = &"LineEdit"
+SpinBoxInnerLineEdit/font_sizes/font_size = 6
+
+[sub_resource type="PackedScene" id="PackedScene_rmuem"]
+[node name="PlayerList" unique_id=1270554405 instance=ExtResource("16_nh04c")]
+script = ExtResource("17_0p3sp")
+
+[sub_resource type="PackedScene" id="PackedScene_8nvfu"]
+[node name="NetworkStatus" unique_id=1130560122 instance=ExtResource("18_b6ywj")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -81.0
+offset_right = 0.0
+grow_horizontal = 0
+alignment = 2
+reverse_sort = true
+script = ExtResource("19_kfo5j")
+TitleText = "STATUS"
+
+[node name="Title" parent="." index="0" unique_id=442716041]
+text = "STATUS"
+
+[node name="Sep" parent="." index="1" unique_id=242242498]
+text = " < "
+
+[node name="Content" parent="." index="2" unique_id=478299627]
+alignment = 2
+reverse_sort = true
+
+[node name="StatusBar" parent="Content" index="0" unique_id=235635835 instance=ExtResource("20_bxyeu")]
+layout_mode = 2
+alignment = 2
+reverse_sort = true
+
+[sub_resource type="Theme" id="Theme_bxyeu"]
+default_font_size = 8
+BoxContainer/constants/separation = 1
+Button/constants/icon_max_width = 12
+Button/styles/disabled = ExtResource("6_lwyun")
+Button/styles/focus = ExtResource("7_6ownw")
+Button/styles/hover = ExtResource("8_7gqbq")
+Button/styles/normal = ExtResource("9_7ly0g")
+Button/styles/pressed = ExtResource("10_anfq7")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+LineEdit/font_sizes/font_size = 6
+LineEdit/styles/focus = ExtResource("11_nh04c")
+LineEdit/styles/normal = ExtResource("12_0p3sp")
+LineEdit/styles/read_only = ExtResource("13_b6ywj")
+SpinBox/constants/field_and_buttons_separation = -2
+SpinBoxInnerLineEdit/base_type = &"LineEdit"
+SpinBoxInnerLineEdit/font_sizes/font_size = 6
+
+[resource]
+
+[node name="Root" unique_id=1971865465 instance=ExtResource("1_qkyby")]
+script = ExtResource("2_hcsd1")
+WorldType = 1
+
+[node name="Preload" type="ResourcePreloader" parent="." index="0" unique_id=557535524]
+resources = [PackedStringArray("TestArena", "TestTerrain"), [ExtResource("5_t2k82"), ExtResource("6_sb5pu")]]
+
+[node name="World" type="Node" parent="." index="1" unique_id=806650860]
+
+[node name="Options" parent="UI" parent_id_path=PackedInt32Array(536397612) index="0" unique_id=947126449 instance=ExtResource("3_5stsd")]
+offset_top = -84.0
+offset_right = 145.0
+theme = SubResource("Theme_kfo5j")
+
+[node name="Session" parent="UI" parent_id_path=PackedInt32Array(536397612) index="1" unique_id=1617885905 instance=ExtResource("7_sb5pu")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -20.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 1
+Content = SubResource("PackedScene_rmuem")
+Buttons = SubResource("PackedScene_8nvfu")
+
+[node name="Settings" parent="UI" parent_id_path=PackedInt32Array(536397612) index="2" unique_id=2047388148 instance=ExtResource("4_yt8mq")]
+offset_top = -44.0
+theme = SubResource("Theme_bxyeu")

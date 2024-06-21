@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cridwxfw0mlo8"]
+
+[ext_resource type="PackedScene" uid="uid://ccbh5dsf23oat" path="res://addons/F00F.Core/Common/UI/Controls/DataGrid/DataGrid.tscn" id="1_i1asr"]
+[ext_resource type="Script" uid="uid://6uf2nhu2d05o" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/PlayerList.cs" id="2_7xy4m"]
+
+[node name="PlayerList" unique_id=1270554405 instance=ExtResource("1_i1asr")]
+script = ExtResource("2_7xy4m")

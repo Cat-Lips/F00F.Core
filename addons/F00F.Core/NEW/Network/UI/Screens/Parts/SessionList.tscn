@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cqj30oitk218r"]
+
+[ext_resource type="PackedScene" uid="uid://ccbh5dsf23oat" path="res://addons/F00F.Core/Common/UI/Controls/DataGrid/DataGrid.tscn" id="1_t3hrl"]
+[ext_resource type="Script" uid="uid://chytb6spxstce" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Parts/SessionList.cs" id="2_05xfa"]
+
+[node name="SessionList" unique_id=1270554405 instance=ExtResource("1_t3hrl")]
+script = ExtResource("2_05xfa")

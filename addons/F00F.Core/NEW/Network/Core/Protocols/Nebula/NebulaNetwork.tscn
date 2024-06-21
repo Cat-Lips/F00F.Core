@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dlk2wtjvmwacp"]
+
+[ext_resource type="Script" uid="uid://c0xdluxeyno07" path="res://addons/F00F.Core/NEW/Network/Core/Protocols/Nebula/NebulaNetwork.cs" id="1_foidd"]
+
+[node name="Nebula" type="Node" unique_id=376074101]
+script = ExtResource("1_foidd")

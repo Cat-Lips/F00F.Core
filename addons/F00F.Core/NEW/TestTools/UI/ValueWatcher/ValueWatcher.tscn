@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cdwaunciplhc5"]
+
+[ext_resource type="PackedScene" uid="uid://cllg26jgvexcv" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataView.tscn" id="1_v7gfc"]
+[ext_resource type="StyleBox" uid="uid://draavm7jesq4m" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Disabled.tres" id="2_chqq4"]
+[ext_resource type="Script" uid="uid://cscrygdn31c5s" path="res://addons/F00F.Core/NEW/TestTools/UI/ValueWatcher/ValueWatcher.cs" id="2_tom00"]
+[ext_resource type="StyleBox" uid="uid://dba08eba1hqgv" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Focus.tres" id="3_tdqqw"]
+[ext_resource type="StyleBox" uid="uid://ccw7kjwwll4qo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Hover.tres" id="4_oxq5e"]
+[ext_resource type="StyleBox" uid="uid://85r8gfh7cju0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Normal.tres" id="5_f38eg"]
+[ext_resource type="StyleBox" uid="uid://bl16371kv713t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Pressed.tres" id="6_ufifn"]
+[ext_resource type="StyleBox" uid="uid://btst06pkt7eo0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Focus.tres" id="7_el5ot"]
+[ext_resource type="StyleBox" uid="uid://bqvdbus42yxos" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Normal.tres" id="8_5j651"]
+[ext_resource type="StyleBox" uid="uid://biko5dwx1m26t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.ReadOnly.tres" id="9_j548l"]
+
+[sub_resource type="Theme" id="Theme_chqq4"]
+default_font_size = 8
+BoxContainer/constants/separation = 1
+Button/constants/icon_max_width = 12
+Button/styles/disabled = ExtResource("2_chqq4")
+Button/styles/focus = ExtResource("3_tdqqw")
+Button/styles/hover = ExtResource("4_oxq5e")
+Button/styles/normal = ExtResource("5_f38eg")
+Button/styles/pressed = ExtResource("6_ufifn")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+LineEdit/font_sizes/font_size = 6
+LineEdit/styles/focus = ExtResource("7_el5ot")
+LineEdit/styles/normal = ExtResource("8_5j651")
+LineEdit/styles/read_only = ExtResource("9_j548l")
+SpinBox/constants/field_and_buttons_separation = -2
+SpinBoxInnerLineEdit/base_type = &"LineEdit"
+SpinBoxInnerLineEdit/font_sizes/font_size = 6
+
+[node name="Root" unique_id=40980128 instance=ExtResource("1_v7gfc")]
+theme = SubResource("Theme_chqq4")
+script = ExtResource("2_tom00")
+AutoShow = true
+
+[editable path="Panel/Margin/Layout/Scroll"]

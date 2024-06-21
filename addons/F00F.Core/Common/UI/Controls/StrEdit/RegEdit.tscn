@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://blk2vxfr5pj0s"]
+
+[ext_resource type="PackedScene" uid="uid://tgnum7qeyfb5" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/StrEdit.tscn" id="1_4srgq"]
+[ext_resource type="Script" uid="uid://cdyqkrsysnflp" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/RegEdit.cs" id="2_luo3r"]
+
+[node name="RegEdit" unique_id=3430171 instance=ExtResource("1_4srgq")]
+script = ExtResource("2_luo3r")

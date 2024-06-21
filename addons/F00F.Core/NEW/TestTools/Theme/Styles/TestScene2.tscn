@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cw3wmskbraljj"]
+
+[ext_resource type="Theme" uid="uid://bbnlsy6nlnnqo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Theme.Debug.tres" id="1_lbttt"]
+
+[node name="0" type="VBoxContainer" unique_id=439026800]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.5
+offset_top = -22.0
+offset_right = 58.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_lbttt")
+alignment = 1
+
+[node name="1" type="HBoxContainer" parent="." unique_id=429092775]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="1" unique_id=2023152903]
+layout_mode = 2
+text = "TEXT"
+
+[node name="SpinBox" type="SpinBox" parent="1" unique_id=485801491]
+layout_mode = 2
+
+[node name="2" type="HBoxContainer" parent="." unique_id=1397511834]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="2" unique_id=776094826]
+layout_mode = 2
+text = "TEXT"
+
+[node name="SpinBox" type="SpinBox" parent="2" unique_id=2051278958]
+layout_mode = 2
+
+[node name="3" type="HBoxContainer" parent="." unique_id=1540971408]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="3" unique_id=892901426]
+layout_mode = 2
+text = "TEXT"
+
+[node name="SpinBox" type="SpinBox" parent="3" unique_id=1682039267]
+layout_mode = 2

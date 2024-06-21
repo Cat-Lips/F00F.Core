@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d0s7xpqsn1qq"]
+
+[ext_resource type="Script" uid="uid://celm1s1bgni2m" path="res://addons/F00F.Core/Common/UI/Controls/SunkLabel/SunkLabel.cs" id="1_ntyxj"]
+
+[node name="SunkLabel" type="LineEdit" unique_id=564830909]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.25
+offset_top = -15.5
+offset_right = 34.25
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "<inactive>"
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+caret_blink = true
+script = ExtResource("1_ntyxj")

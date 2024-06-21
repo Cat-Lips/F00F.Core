@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dm3au5n83xpuq"]
+
+[ext_resource type="PackedScene" uid="uid://ddd0e7ovome7g" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataViewEx.tscn" id="1_64e3j"]
+[ext_resource type="StyleBox" uid="uid://draavm7jesq4m" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Disabled.tres" id="2_qd8uv"]
+[ext_resource type="Script" uid="uid://i0mm7bdm57ye" path="res://addons/F00F.Core/NEW/TestTools/UI/Settings.cs" id="2_wxoar"]
+[ext_resource type="StyleBox" uid="uid://dba08eba1hqgv" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Focus.tres" id="3_3ayj3"]
+[ext_resource type="StyleBox" uid="uid://ccw7kjwwll4qo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Hover.tres" id="4_2y0ur"]
+[ext_resource type="StyleBox" uid="uid://85r8gfh7cju0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Normal.tres" id="5_1pkji"]
+[ext_resource type="StyleBox" uid="uid://bl16371kv713t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Pressed.tres" id="6_cfavu"]
+[ext_resource type="StyleBox" uid="uid://btst06pkt7eo0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Focus.tres" id="7_f5ww7"]
+[ext_resource type="StyleBox" uid="uid://bqvdbus42yxos" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Normal.tres" id="8_6jhnw"]
+[ext_resource type="StyleBox" uid="uid://biko5dwx1m26t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.ReadOnly.tres" id="9_f5f7x"]
+
+[sub_resource type="Theme" id="Theme_qd8uv"]
+default_font_size = 8
+BoxContainer/constants/separation = 1
+Button/constants/icon_max_width = 12
+Button/styles/disabled = ExtResource("2_qd8uv")
+Button/styles/focus = ExtResource("3_3ayj3")
+Button/styles/hover = ExtResource("4_2y0ur")
+Button/styles/normal = ExtResource("5_1pkji")
+Button/styles/pressed = ExtResource("6_cfavu")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+LineEdit/font_sizes/font_size = 6
+LineEdit/styles/focus = ExtResource("7_f5ww7")
+LineEdit/styles/normal = ExtResource("8_6jhnw")
+LineEdit/styles/read_only = ExtResource("9_f5f7x")
+SpinBox/constants/field_and_buttons_separation = -2
+SpinBoxInnerLineEdit/base_type = &"LineEdit"
+SpinBoxInnerLineEdit/font_sizes/font_size = 6
+
+[node name="Settings" unique_id=2047388148 instance=ExtResource("1_64e3j")]
+anchors_preset = 3
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -51.0
+offset_top = -52.0
+offset_bottom = 0.0
+grow_vertical = 0
+theme = SubResource("Theme_qd8uv")
+script = ExtResource("2_wxoar")
+
+[node name="Title" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(1051121370) index="0" unique_id=1030496282]
+text = "Settings"
+
+[editable path="Panel/Margin/Layout/Scroll"]

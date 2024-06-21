@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="F00F.Core"
+run/main_scene="uid://bof06jid24poc"
+config/features=PackedStringArray("4.8", "C#")
+config/icon="res://Assets/icon.svg"
+
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="F00F.Core"
+
+[editor]
+
+script/templates_search_path="res://.editor"
+naming/scene_name_casing=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/F00F/plugin.cfg")
+
+[input_devices]
+
+buffering/agile_event_flushing=true
+
+[physics]
+
+2d/run_on_separate_thread=true
+3d/run_on_separate_thread=true
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
