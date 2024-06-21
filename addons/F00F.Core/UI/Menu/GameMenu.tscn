@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dby4yx7jehu5b"]
+
+[ext_resource type="PackedScene" uid="uid://d20ngb5t3ppwv" path="res://addons/F00F.Core/Common/UI/SlideMenu/SlideMenu.tscn" id="1_qb7np"]
+[ext_resource type="Script" uid="uid://ckly08qcxqage" path="res://addons/F00F.Core/UI/Menu/GameMenu.cs" id="2_1ktfl"]
+
+[node name="GameMenu" instance=ExtResource("1_qb7np")]
+script = ExtResource("2_1ktfl")
+
+[node name="Label" parent="Panel/Margin/Layout" index="0"]
+custom_minimum_size = Vector2(46, 31)
+text = "Game"
+
+[node name="GameOptions" type="MenuButton" parent="Panel/Margin/Layout/Items" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Game Options"
+switch_on_hover = true
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/Items" index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="QuitGame" type="Button" parent="Panel/Margin/Layout/Items" index="2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit Game"

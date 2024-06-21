@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dql6k8yvowyyg"]
+
+[ext_resource type="Script" uid="uid://bkn27uho7rd7p" path="res://addons/F00F.Core/TestTools/_/TestTerrain.cs" id="1_u3ln6"]
+[ext_resource type="PackedScene" uid="uid://38i12o6wnxi8" path="res://addons/F00F.Core/TestTools/_/WorldsEnd.tscn" id="2_j8kgc"]
+
+[node name="Terrain" type="StaticBody3D"]
+script = ExtResource("1_u3ln6")
+
+[node name="Shape" type="CollisionShape3D" parent="."]
+
+[node name="Mesh" type="MeshInstance3D" parent="Shape"]
+
+[node name="Bounds" parent="." instance=ExtResource("2_j8kgc")]
