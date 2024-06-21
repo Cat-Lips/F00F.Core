@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c33ku36h6ud0h"]
+
+[ext_resource type="Script" uid="uid://7inq52c5j8y7" path="res://addons/F00F.Core/Common/2D/Game2D.cs" id="1_hxup5"]
+
+[node name="World" type="CanvasLayer"]
+script = ExtResource("1_hxup5")

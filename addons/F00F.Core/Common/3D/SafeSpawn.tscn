@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b13egrmhhlif7"]
+
+[ext_resource type="Script" uid="uid://de7opr7urnn81" path="res://addons/F00F.Core/Common/3D/SafeSpawn.cs" id="1_inh83"]
+
+[node name="SafeSpawn" type="Area3D"]
+script = ExtResource("1_inh83")

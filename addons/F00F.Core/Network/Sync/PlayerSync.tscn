@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf7y1pvrla7w6"]
+
+[ext_resource type="Script" uid="uid://dbmtpm6nfg6bv" path="res://addons/F00F.Core/Network/Sync/PlayerSync.cs" id="1_0jemx"]
+
+[node name="PlayerSync" type="MultiplayerSynchronizer"]
+script = ExtResource("1_0jemx")
