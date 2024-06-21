@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://4434sxtrhcct"]
+
+[ext_resource type="PackedScene" uid="uid://c8dfco8xkk07l" path="res://addons/F00F.Core/Game3D.tscn" id="1_xl211"]
+[ext_resource type="Script" uid="uid://msx6u5hxxh4f" path="res://addons/F00F.Core/TestTools/Test3D.cs" id="2_jdaiy"]
+[ext_resource type="PackedScene" uid="uid://djnwc52ikkf7x" path="res://addons/F00F.Core/TestTools/UI/Options.tscn" id="3_ra55j"]
+[ext_resource type="PackedScene" uid="uid://dm3au5n83xpuq" path="res://addons/F00F.Core/TestTools/UI/Settings.tscn" id="4_8al6g"]
+
+[node name="Root" unique_id=775411780 instance=ExtResource("1_xl211")]
+script = ExtResource("2_jdaiy")
+WorldType = 0
+ShowSettingsWithMouse = true
+
+[node name="World" type="Node" parent="." index="3" unique_id=1538770679]
+
+[node name="Arena" parent="World" index="0" unique_id=388193643 instance_placeholder="res://addons/F00F.Core/TestTools/TestArena/TestArena.tscn"]
+visible = false
+
+[node name="Terrain" parent="World" index="1" unique_id=1688866153 instance_placeholder="res://addons/F00F.Core/TestTools/TestTerrain/TestTerrain.tscn"]
+visible = false
+
+[node name="Options" parent="UI" parent_id_path=PackedInt32Array(396997907) index="3" unique_id=1302556716 instance=ExtResource("3_ra55j")]
+unique_name_in_owner = true
+
+[node name="Settings" parent="UI" parent_id_path=PackedInt32Array(396997907) index="4" unique_id=748011626 instance=ExtResource("4_8al6g")]
+unique_name_in_owner = true

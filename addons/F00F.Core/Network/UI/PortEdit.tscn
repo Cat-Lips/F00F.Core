@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://wu50y7o6vwpr"]
+
+[ext_resource type="Script" uid="uid://ctrd51tp3xrix" path="res://addons/F00F.Core/Network/UI/PortEdit.cs" id="1_gy0eh"]
+
+[node name="PortEdit" type="SpinBox" unique_id=1606118385]
+offset_right = 86.5
+offset_bottom = 31.0
+rounded = true
+select_all_on_focus = true
+script = ExtResource("1_gy0eh")

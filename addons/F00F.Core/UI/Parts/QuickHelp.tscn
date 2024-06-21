@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://beg6e0rlv57e3"]
+
+[ext_resource type="PackedScene" uid="uid://dwpqq58bioow8" path="res://addons/F00F.Core/Common/UI/RootPopup.tscn" id="1_cq4ql"]
+[ext_resource type="Script" uid="uid://byos8g7iuhyil" path="res://addons/F00F.Core/UI/Parts/QuickHelp.cs" id="2_7pnhm"]
+
+[node name="QuickHelp" unique_id=1113991147 instance=ExtResource("1_cq4ql")]
+script = ExtResource("2_7pnhm")
+TextFile = ""
+
+[node name="Content" type="RichTextLabel" parent="Root/Panel/Margin/Scroll/Margin" parent_id_path=PackedInt32Array(365536972, 172388897) index="0" unique_id=1041377398]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+threaded = true
+progress_bar_delay = 500
+
+[editable path="Root"]
+[editable path="Root/Panel/Margin/Scroll"]

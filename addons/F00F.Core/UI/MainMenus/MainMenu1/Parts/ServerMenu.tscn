@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bth2feuqci7vn"]
+
+[ext_resource type="PackedScene" uid="uid://dke6orxa2ubqn" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/StatusMenu.tscn" id="1_uie6a"]
+[ext_resource type="PackedScene" uid="uid://wu50y7o6vwpr" path="res://addons/F00F.Core/Network/UI/PortEdit.tscn" id="2_1k8mr"]
+[ext_resource type="Script" uid="uid://lmby13uvgxs1" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/ServerMenu.cs" id="2_bspmq"]
+
+[node name="ServerMenu" unique_id=1763110557 instance=ExtResource("1_uie6a")]
+script = ExtResource("2_bspmq")
+
+[node name="Label" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="0" unique_id=1404783892]
+custom_minimum_size = Vector2(50, 31)
+text = "Server"
+
+[node name="StartServer" type="Button" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="0" unique_id=646944176]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Server"
+
+[node name="StopServer" type="Button" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="1" unique_id=478738409]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Stop Server"
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="2" unique_id=110746237]
+layout_mode = 2
+
+[node name="ServerAddress" type="LineEdit" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="3" unique_id=694096849]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+editable = false
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="ServerPort" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="4" unique_id=372557382 instance=ExtResource("2_1k8mr")]
+unique_name_in_owner = true
+layout_mode = 2

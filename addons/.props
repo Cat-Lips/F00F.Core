@@ -1,0 +1,6 @@
+<Project>
+  <Import Project="Nebula.props" Condition="Exists('Nebula')" />
+  <Import Project="debug_draw_3d.props" Condition="Exists('debug_draw_3d')" />
+  <Import Project="Steamworks.NET.props" Condition="Exists('Steamworks.NET')" />
+  <Import Project="godotsteam_csharpbindings.props" Condition="Exists('godotsteam_csharpbindings')" />
+</Project>

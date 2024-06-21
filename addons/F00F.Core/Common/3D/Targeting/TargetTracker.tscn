@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cq2jhr55b0bmd"]
+
+[ext_resource type="Script" uid="uid://cmpidy4iicfcn" path="res://addons/F00F.Core/Common/3D/Targeting/TargetTracker.cs" id="1_ro2sw"]
+
+[node name="TargetTracker" type="Node3D" unique_id=1444470834]
+script = ExtResource("1_ro2sw")
+
+[node name="HUD" type="CenterContainer" parent="." unique_id=1429968610]
+unique_name_in_owner = true
+use_top_left = true
+
+[node name="OnScreen" type="TextureRect" parent="HUD" unique_id=1431125692]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.15686275)
+layout_mode = 2
+
+[node name="OffScreen" type="TextureRect" parent="HUD" unique_id=741649813]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.47058824)
+layout_mode = 2

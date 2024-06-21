@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://djnwc52ikkf7x"]
+
+[ext_resource type="PackedScene" uid="uid://clcgyl7ynxu40" path="res://addons/F00F.Core/TestTools/UI/ValueWatcher/Stats/Stats.tscn" id="1_lf2r8"]
+[ext_resource type="Script" uid="uid://07l2wnqk102" path="res://addons/F00F.Core/TestTools/UI/Options.cs" id="2_gmmii"]
+
+[node name="Options" unique_id=947126449 instance=ExtResource("1_lf2r8")]
+script = ExtResource("2_gmmii")
+
+[editable path="Panel/Margin/Layout/Scroll"]

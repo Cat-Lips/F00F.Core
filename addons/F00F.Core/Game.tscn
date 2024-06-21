@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cc537g3230cne"]
+
+[ext_resource type="Script" uid="uid://5401xf2sb0km" path="res://addons/F00F.Core/Game.cs" id="1_qelgt"]
+[ext_resource type="PackedScene" uid="uid://ox6rt0tt407w" path="res://addons/F00F.Core/UI/GUI.tscn" id="2_hmqwk"]
+[ext_resource type="PackedScene" uid="uid://sjrvyfyw2t3m" path="res://addons/F00F.Core/Network/Network.tscn" id="3_idnys"]
+
+[node name="Root" type="Node" unique_id=1435348667]
+script = ExtResource("1_qelgt")
+
+[node name="Network" parent="." unique_id=325049890 instance=ExtResource("3_idnys")]
+
+[node name="UI" parent="." unique_id=396997907 instance=ExtResource("2_hmqwk")]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dke6orxa2ubqn"]
+
+[ext_resource type="PackedScene" uid="uid://d20ngb5t3ppwv" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/SlideMenu.tscn" id="1_fav8g"]
+[ext_resource type="Script" uid="uid://bdw2ha3brx017" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/StatusMenu.cs" id="2_xjlsa"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="3_7gr6b"]
+
+[node name="Root" unique_id=1457599406 instance=ExtResource("1_fav8g")]
+script = ExtResource("2_xjlsa")
+
+[node name="StatusSep" type="VSeparator" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="3" unique_id=831588597]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="StatusBar" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="4" unique_id=1012543357 instance=ExtResource("3_7gr6b")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2

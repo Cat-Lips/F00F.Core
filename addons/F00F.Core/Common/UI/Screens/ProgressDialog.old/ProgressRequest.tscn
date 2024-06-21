@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwley1st7550q"]
+
+[sub_resource type="Resource" id="Resource_uweln"]
+metadata/__load_path__ = "res://addons/F00F.Core/Common/UI/ProgressDialog/ProgressRequest.cs"
+
+[node name="HttpRequest" type="HTTPRequest"]
+script = SubResource("Resource_uweln")

@@ -1,0 +1,34 @@
+<Project>
+
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);STEAMWORKS</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Reference Include="Steamworks.NET">
+      <HintPath Condition="'$(GodotTargetPlatform)' == 'linuxbsd'">addons/Steamworks.NET/OSX-Linux-x64/Steamworks.NET.dll</HintPath>
+      <HintPath Condition="'$(GodotTargetPlatform)' == 'windows'">addons/Steamworks.NET/Windows-x64/Steamworks.NET.dll</HintPath>
+      <HintPath Condition="'$(GodotTargetPlatform)' == 'macos'">addons/Steamworks.NET/OSX-Linux-x64/Steamworks.NET.dll</HintPath>
+    </Reference>
+
+    <Content
+      Link="steam_api64.dll"
+      Include="addons/Steamworks.NET/Windows-x64/steam_api64.dll"
+      Condition="'$(GodotTargetPlatform)' == 'windows'"
+      CopyToOutputDirectory="PreserveNewest" />
+    <Content
+      Link="libsteam_api.so"
+      Include="addons/Steamworks.NET/OSX-Linux-x64/libsteam_api.so"
+      Condition="'$(GodotTargetPlatform)' == 'linuxbsd'"
+      CopyToOutputDirectory="PreserveNewest" />
+    <Content
+      Link="libsteam_api.dylib"
+      Include="addons/Steamworks.NET/OSX-Linux-x64/steam_api.bundle/Contents/MacOS/libsteam_api.dylib"
+      Condition="'$(GodotTargetPlatform)' == 'macos'"
+      CopyToOutputDirectory="PreserveNewest" />
+
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://byc6u16umicge"]
+
+[ext_resource type="Script" uid="uid://2ijqme20x73v" path="res://addons/F00F.Core/TestTools/ColliderTest/ColliderTest.cs" id="1_5w2fe"]
+
+[node name="ColliderTest" type="Node" unique_id=2132314015]
+script = ExtResource("1_5w2fe")

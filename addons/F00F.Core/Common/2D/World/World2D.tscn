@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cb2o2m1urp4a"]
+
+[ext_resource type="Script" uid="uid://b4bf72h7xjmnd" path="res://addons/F00F.Core/Common/2D/World/World2D.cs" id="1_n60wr"]
+
+[node name="World" type="Node" unique_id=1845513713]
+script = ExtResource("1_n60wr")

@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b35fewt4vvq8s"]
+
+[ext_resource type="Script" uid="uid://bveoyr5h5wpjn" path="res://addons/F00F.Core/Utilities/Shaders/ColorConvert.cs" id="1_81gtl"]
+[ext_resource type="Shader" uid="uid://dcjhvc34tmig0" path="res://addons/F00F.Core/Utilities/Shaders/ColorConvert.gdshader" id="2_wfaw5"]
+
+[resource]
+shader = ExtResource("2_wfaw5")
+shader_parameter/color_from = Color(1, 1, 1, 1)
+shader_parameter/color_to = Color(1, 1, 1, 1)
+script = ExtResource("1_81gtl")

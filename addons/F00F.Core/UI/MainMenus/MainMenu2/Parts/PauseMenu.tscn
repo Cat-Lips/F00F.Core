@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://wrt7rac6npx5"]
+
+[ext_resource type="Script" uid="uid://bp10w0gxx3s88" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/PauseMenu.cs" id="1_67a8f"]
+
+[node name="Layout" type="VBoxContainer" unique_id=1383425303]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -54.5
+offset_right = 69.5
+offset_bottom = 54.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_67a8f")
+
+[node name="Resume" type="Button" parent="." unique_id=1772904066]
+unique_name_in_owner = true
+layout_mode = 2
+text = "RESUME"
+
+[node name="Sep1" type="HSeparator" parent="." unique_id=180570337]
+layout_mode = 2
+
+[node name="Message" type="RichTextLabel" parent="." unique_id=1465717949]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "...GAME PAUSED..."
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sep2" type="HSeparator" parent="." unique_id=1345135431]
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="." unique_id=569297948]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "QUIT"

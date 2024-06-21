@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bv3074j5i8mx2"]
+
+[ext_resource type="PackedScene" uid="uid://dke6orxa2ubqn" path="res://addons/F00F.Core/Common/UI/Controls/SlideMenu/StatusMenu.tscn" id="1_37wyt"]
+[ext_resource type="PackedScene" uid="uid://wu50y7o6vwpr" path="res://addons/F00F.Core/Network/UI/PortEdit.tscn" id="2_07vhv"]
+[ext_resource type="Script" uid="uid://bt4nvsf06jdko" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/Parts/ClientMenu.cs" id="2_dwgrc"]
+
+[node name="ClientMenu" unique_id=1515454524 instance=ExtResource("1_37wyt")]
+script = ExtResource("2_dwgrc")
+
+[node name="Label" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(131994325) index="0" unique_id=1404783892]
+custom_minimum_size = Vector2(45, 31)
+text = "Client"
+
+[node name="CreateClient" type="Button" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="0" unique_id=1799611580]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Connect to Server"
+
+[node name="CloseClient" type="Button" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="1" unique_id=924854801]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Cancel Connect|Disconnect from Server"
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="2" unique_id=1513484952]
+layout_mode = 2
+
+[node name="ConnectAddress" type="LineEdit" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="3" unique_id=1120047022]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+expand_to_text_length = true
+select_all_on_focus = true
+caret_blink = true
+
+[node name="ConnectPort" parent="Panel/Margin/Layout/Items" parent_id_path=PackedInt32Array(1654192794) index="4" unique_id=55182465 instance=ExtResource("2_07vhv")]
+unique_name_in_owner = true
+layout_mode = 2
