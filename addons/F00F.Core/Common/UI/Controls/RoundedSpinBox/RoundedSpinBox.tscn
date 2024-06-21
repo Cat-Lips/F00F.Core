@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cweuwe8fvijx1"]
+
+[ext_resource type="Script" uid="uid://c63856drxsb6x" path="res://addons/F00F.Core/Common/UI/Controls/RoundedSpinBox/RoundedSpinBox.cs" id="1_xlklf"]
+
+[node name="IntEdit" type="SpinBox" unique_id=1884367686]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.25
+offset_top = -15.5
+offset_right = 43.25
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+rounded = true
+script = ExtResource("1_xlklf")
