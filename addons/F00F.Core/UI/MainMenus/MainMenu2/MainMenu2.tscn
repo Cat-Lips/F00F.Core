@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://daffykfuo15hd"]
+
+[ext_resource type="PackedScene" uid="uid://dwpqq58bioow8" path="res://addons/F00F.Core/Common/UI/RootPopup.tscn" id="1_26tih"]
+[ext_resource type="Script" uid="uid://cy4i5i7trss11" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/MainMenu2.cs" id="2_8pm75"]
+[ext_resource type="PackedScene" uid="uid://cfxay78p0rsc6" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/MainMenu.tscn" id="3_psxgu"]
+[ext_resource type="PackedScene" uid="uid://wrt7rac6npx5" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/PauseMenu.tscn" id="4_7wysw"]
+[ext_resource type="PackedScene" uid="uid://bk1l5anr6pth5" path="res://addons/F00F.Core/UI/MainMenus/MainMenu2/Parts/EndGameMenu.tscn" id="5_pbans"]
+[ext_resource type="PackedScene" uid="uid://crdshbrf8bvde" path="res://addons/F00F.Core/Common/UI/Controls/StatusBar/StatusBar.tscn" id="6_pbans"]
+
+[node name="MainMenu" unique_id=752861286 instance=ExtResource("1_26tih")]
+script = ExtResource("2_8pm75")
+ShowOnReady = true
+ClickToClose = false
+CloseOnCancel = false
+
+[node name="MainMenu" parent="Root/Panel/Margin/Scroll/Margin" parent_id_path=PackedInt32Array(365536972, 172388897) index="0" unique_id=151142181 instance=ExtResource("3_psxgu")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="PauseMenu" parent="Root/Panel/Margin/Scroll/Margin" parent_id_path=PackedInt32Array(365536972, 172388897) index="1" unique_id=656673025 instance=ExtResource("4_7wysw")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="EndGameMenu" parent="Root/Panel/Margin/Scroll/Margin" parent_id_path=PackedInt32Array(365536972, 172388897) index="2" unique_id=458095828 instance=ExtResource("5_pbans")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="NetworkStatus" parent="Root/Panel/Margin/Scroll/Margin" parent_id_path=PackedInt32Array(365536972, 172388897) index="3" unique_id=1989540310 instance=ExtResource("6_pbans")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[editable path="Root"]
+[editable path="Root/Panel/Margin/Scroll"]

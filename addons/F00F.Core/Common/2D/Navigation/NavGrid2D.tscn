@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5t8pyurds0e"]
+
+[ext_resource type="Script" uid="uid://be1326sxme437" path="res://addons/F00F.Core/Common/2D/Navigation/NavGrid2D.cs" id="1_5g7eb"]
+
+[node name="NavGrid2D" type="Node" unique_id=914601173]
+script = ExtResource("1_5g7eb")
