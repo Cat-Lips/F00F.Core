@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2nixf13o5pe2"]
+
+[ext_resource type="Script" uid="uid://bd0f1kw708fdk" path="res://addons/F00F.Core/TestTools/TestTerrain/TestTerrain.cs" id="1_x3h5t"]
+[ext_resource type="PackedScene" uid="uid://38i12o6wnxi8" path="res://addons/F00F.Core/Common/3D/World/WorldBounds.tscn" id="3_x3mqs"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_x3h5t"]
+friction = 0.0
+rough = true
+bounce = 1.0
+
+[node name="Terrain" type="StaticBody3D" unique_id=119963059]
+script = ExtResource("1_x3h5t")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=619165001]
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=767676393]
+
+[node name="Bounds" parent="." unique_id=1537672825 instance=ExtResource("3_x3mqs")]
+physics_material_override = SubResource("PhysicsMaterial_x3h5t")
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=1354264226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25)
