@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://w62mfjjkk1ru"]
+
+[ext_resource type="PackedScene" uid="uid://c7rrtcdx5yq78" path="res://addons/F00F.Core/Common/UI/ModelView/ModelView.tscn" id="1_va74g"]
+[ext_resource type="Script" path="res://addons/F00F.Core/Import/Editor/GlbEdit.cs" id="2_n306a"]
+
+[node name="Root" instance=ExtResource("1_va74g")]
+script = ExtResource("2_n306a")
+
+[node name="AutoApply" type="CheckButton" parent="Panel/Margin/Layout/DataPanel" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Auto apply changes"
+
+[node name="ViewSource" type="CheckButton" parent="Panel/Margin/Layout/DataPanel" index="1"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+layout_mode = 2
+text = "View original scene"
+
+[node name="Sep1" type="HSeparator" parent="Panel/Margin/Layout/DataPanel" index="2"]
+layout_mode = 2
+
+[node name="Sep2" type="HSeparator" parent="Panel/Margin/Layout/DataPanel" index="4"]
+auto_translate_mode = 1
+layout_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/Margin/Layout/DataPanel" index="5"]
+layout_mode = 2
+
+[node name="Accept" type="Button" parent="Panel/Margin/Layout/DataPanel/Buttons" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accept"
+
+[node name="Apply" type="Button" parent="Panel/Margin/Layout/DataPanel/Buttons" index="1"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apply"
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/DataPanel/Buttons" index="2"]
+layout_mode = 2
+
+[node name="Revert" type="Button" parent="Panel/Margin/Layout/DataPanel/Buttons" index="3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Revert"
+
+[node name="Abort" type="Button" parent="Panel/Margin/Layout/DataPanel/Buttons" index="4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Abort"
+
+[editable path="Panel/Margin/Layout/DataPanel/Scroll"]
