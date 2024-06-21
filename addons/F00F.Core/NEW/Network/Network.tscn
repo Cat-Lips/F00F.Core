@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://duvv27gb16to1"]
+
+[ext_resource type="Script" uid="uid://crtsljlthmg3g" path="res://addons/F00F.Core/NEW/Network/Network.cs" id="1_347s0"]
+[ext_resource type="PackedScene" uid="uid://bm1682ynbd0mu" path="res://addons/F00F.Core/NEW/Network/Core/Protocols/Godot/GodotNetwork.tscn" id="2_xomln"]
+[ext_resource type="PackedScene" uid="uid://dlk2wtjvmwacp" path="res://addons/F00F.Core/NEW/Network/Core/Protocols/Nebula/NebulaNetwork.tscn" id="3_ql5q0"]
+[ext_resource type="PackedScene" uid="uid://bb8oq8wv5pon2" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Direct/DirectNetwork.tscn" id="4_cyhkk"]
+[ext_resource type="PackedScene" uid="uid://bgwhwu2eln7vt" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Steam/SteamNetwork.tscn" id="4_ql5q0"]
+[ext_resource type="PackedScene" uid="uid://cp2d31g26hyb0" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Local/LocalNetwork.tscn" id="4_xastx"]
+[ext_resource type="PackedScene" uid="uid://c6ghgximvybbh" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Epic/EpicNetwork.tscn" id="5_rxtmp"]
+
+[node name="Network" type="Node" unique_id=667835163]
+process_mode = 3
+script = ExtResource("1_347s0")
+
+[node name="Protocols" type="Node" parent="." unique_id=515394319]
+
+[node name="Godot" parent="Protocols" unique_id=877069343 instance=ExtResource("2_xomln")]
+
+[node name="Nebula" parent="Protocols" unique_id=376074101 instance=ExtResource("3_ql5q0")]
+
+[node name="Providers" type="Node" parent="." unique_id=1277872476]
+
+[node name="IP" parent="Providers" unique_id=1280739974 instance=ExtResource("4_cyhkk")]
+
+[node name="LAN" parent="Providers" unique_id=1359613026 instance=ExtResource("4_xastx")]
+
+[node name="Epic" parent="Providers" unique_id=328306816 instance=ExtResource("5_rxtmp")]
+
+[node name="Steam" parent="Providers" unique_id=894285778 instance=ExtResource("4_ql5q0")]

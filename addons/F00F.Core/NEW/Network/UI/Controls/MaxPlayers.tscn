@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bkvqa43rqpvm5"]
+
+[ext_resource type="PackedScene" uid="uid://cweuwe8fvijx1" path="res://addons/F00F.Core/Common/UI/Controls/IntEdit/IntEdit.tscn" id="1_v8tus"]
+[ext_resource type="Script" uid="uid://b0x6o8scq182m" path="res://addons/F00F.Core/NEW/Network/UI/Controls/MaxPlayers.cs" id="2_eu42o"]
+
+[node name="MaxPlayers" unique_id=1884367686 instance=ExtResource("1_v8tus")]
+min_value = 1.0
+max_value = 99.0
+value = 8.0
+script = ExtResource("2_eu42o")

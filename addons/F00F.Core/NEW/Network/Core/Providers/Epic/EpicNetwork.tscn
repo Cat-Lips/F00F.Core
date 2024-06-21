@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c6ghgximvybbh"]
+
+[ext_resource type="Script" uid="uid://cfqm4k7x3it3c" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Epic/EpicNetwork.cs" id="1_ygxqw"]
+
+[node name="Epic" type="Node" unique_id=328306816]
+script = ExtResource("1_ygxqw")

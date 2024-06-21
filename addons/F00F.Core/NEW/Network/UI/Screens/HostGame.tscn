@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cv3nekgi32l5q"]
+
+[ext_resource type="PackedScene" uid="uid://c5ockh4nw2vvb" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Base/HostJoin.tscn" id="1_hknk2"]
+[ext_resource type="Script" uid="uid://dkxx6882max80" path="res://addons/F00F.Core/NEW/Network/UI/Screens/HostGame.cs" id="2_nsfqa"]
+[ext_resource type="PackedScene" uid="uid://njhdlbeiq1p5" path="res://addons/F00F.Core/NEW/Network/UI/Controls/SessionScope.tscn" id="3_0lcic"]
+[ext_resource type="PackedScene" uid="uid://i78uvx6krjh6" path="res://addons/F00F.Core/NEW/Network/UI/Controls/GameName.tscn" id="3_ax1r5"]
+[ext_resource type="PackedScene" uid="uid://bkvqa43rqpvm5" path="res://addons/F00F.Core/NEW/Network/UI/Controls/MaxPlayers.tscn" id="4_3gifb"]
+[ext_resource type="PackedScene" uid="uid://bb3vjbpjmxp1u" path="res://addons/F00F.Core/NEW/Network/UI/Controls/GameDescription.tscn" id="4_070wv"]
+
+[node name="HostGame" unique_id=1888813347 instance=ExtResource("1_hknk2")]
+offset_left = -96.5
+offset_top = -138.0
+offset_right = 96.5
+offset_bottom = 138.0
+script = ExtResource("2_nsfqa")
+
+[node name="Title" parent="." index="0" unique_id=1852269724]
+text = "Host Game"
+
+[node name="GameName" parent="." index="3" unique_id=415342656 instance=ExtResource("3_ax1r5")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GameDescription" parent="." index="4" unique_id=1446338977 instance=ExtResource("4_070wv")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SessionScope" type="HBoxContainer" parent="." index="6" unique_id=1628981367]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SessionScope" index="0" unique_id=772210000]
+layout_mode = 2
+text = "Open To"
+
+[node name="SessionScope" parent="SessionScope" index="1" unique_id=1976535817 instance=ExtResource("3_0lcic")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MaxPlayers" type="HBoxContainer" parent="." index="7" unique_id=1379372277]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MaxPlayers" index="0" unique_id=1371038574]
+layout_mode = 2
+text = "Max Players"
+
+[node name="MaxPlayers" parent="MaxPlayers" index="1" unique_id=1884367686 instance=ExtResource("4_3gifb")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Proceed" parent="Buttons" parent_id_path=PackedInt32Array(2077175377) index="2" unique_id=1900788638]
+text = "HOST >"

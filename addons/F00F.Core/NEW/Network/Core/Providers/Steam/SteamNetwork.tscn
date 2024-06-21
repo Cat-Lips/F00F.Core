@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bgwhwu2eln7vt"]
+
+[ext_resource type="Script" uid="uid://bklspuct2m4mj" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Steam/SteamNetwork.cs" id="1_punlx"]
+
+[node name="Steam" type="Node" unique_id=894285778]
+script = ExtResource("1_punlx")

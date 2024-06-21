@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dnjp5fbve2700"]
+
+[ext_resource type="PackedScene" uid="uid://c5ockh4nw2vvb" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Base/HostJoin.tscn" id="1_g1rei"]
+[ext_resource type="Script" uid="uid://bbvp7bagp4ws2" path="res://addons/F00F.Core/NEW/Network/UI/Screens/JoinGame.cs" id="2_n2gnp"]
+
+[node name="JoinGame" unique_id=1888813347 instance=ExtResource("1_g1rei")]
+script = ExtResource("2_n2gnp")
+
+[node name="Title" parent="." index="0" unique_id=1852269724]
+text = "Join Game"
+
+[node name="Proceed" parent="Buttons" parent_id_path=PackedInt32Array(2077175377) index="2" unique_id=1900788638]
+text = "JOIN >"
