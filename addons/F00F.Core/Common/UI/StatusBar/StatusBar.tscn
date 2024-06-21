@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://crdshbrf8bvde"]
+
+[ext_resource type="Script" uid="uid://dphrjreoxkvwa" path="res://addons/F00F.Core/Common/UI/StatusBar/StatusBar.cs" id="1_v1exp"]
+
+[node name="StatusBar" type="HBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v1exp")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 2
