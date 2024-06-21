@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cs5y5jwsdvbws"]
+
+[ext_resource type="PackedScene" uid="uid://cc537g3230cne" path="res://addons/F00F.Core/Game.tscn" id="1_hva03"]
+[ext_resource type="Script" uid="uid://dtkycqjmlqta8" path="res://addons/F00F.Core/GameEnv.cs" id="2_hva03"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2j8tv"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_7sv8m"]
+sky_material = SubResource("ProceduralSkyMaterial_2j8tv")
+
+[sub_resource type="Environment" id="Environment_rp633"]
+background_mode = 2
+sky = SubResource("Sky_7sv8m")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Root" unique_id=1024728094 instance=ExtResource("1_hva03")]
+script = ExtResource("2_hva03")
+
+[node name="Environment" type="WorldEnvironment" parent="." index="0" unique_id=1348202329]
+environment = SubResource("Environment_rp633")
+
+[node name="Light" type="DirectionalLight3D" parent="." index="2" unique_id=1807675573]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true

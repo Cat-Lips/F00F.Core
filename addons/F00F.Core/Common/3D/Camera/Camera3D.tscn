@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c4bfxpkmsqhgi"]
+
+[ext_resource type="Script" uid="uid://druo48aapsrks" path="res://addons/F00F.Core/Common/3D/Camera/Camera3D.cs" id="1_xe6jy"]
+
+[node name="Camera" type="Camera3D" unique_id=654821715]
+doppler_tracking = 1
+script = ExtResource("1_xe6jy")

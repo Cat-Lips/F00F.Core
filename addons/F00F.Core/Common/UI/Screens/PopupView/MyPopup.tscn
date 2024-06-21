@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bty5t8hqoqaw2"]
+
+[ext_resource type="Script" uid="uid://du7tqvfch0f76" path="res://addons/F00F.Core/Common/UI/Screens/PopupView/MyPopup.cs" id="1_ui4po"]
+
+[node name="Popup" type="PopupPanel" unique_id=448368682]
+disable_3d = true
+transparent_bg = false
+use_hdr_2d = true
+gui_snap_controls_to_pixels = false
+oversampling_override = 1.0
+initial_position = 2
+size = Vector2i(24, 24)
+visible = true
+transparent = false
+script = ExtResource("1_ui4po")

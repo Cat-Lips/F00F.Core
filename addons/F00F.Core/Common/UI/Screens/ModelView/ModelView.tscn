@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c7rrtcdx5yq78"]
+
+[ext_resource type="PackedScene" uid="uid://detue2yxy7yt5" path="res://addons/F00F.Core/Common/UI/Root.tscn" id="1_no4wh"]
+[ext_resource type="Script" uid="uid://6kwm0emebu5u" path="res://addons/F00F.Core/Common/UI/Screens/ModelView/ModelView.cs" id="2_bddww"]
+[ext_resource type="PackedScene" uid="uid://bhb5su3na80dp" path="res://addons/F00F.Core/Common/UI/RootScroll.tscn" id="3_wbxyf"]
+[ext_resource type="PackedScene" uid="uid://c8dfco8xkk07l" path="res://addons/F00F.Core/Game3D.tscn" id="4_fslmo"]
+
+[sub_resource type="World3D" id="World3D_kd67b"]
+
+[node name="Root" unique_id=758238501 instance=ExtResource("1_no4wh")]
+script = ExtResource("2_bddww")
+
+[node name="Layout" type="HBoxContainer" parent="Panel/Margin" parent_id_path=PackedInt32Array(915796819) index="0" unique_id=1875289554]
+layout_mode = 2
+
+[node name="DataPanel" type="VBoxContainer" parent="Panel/Margin/Layout" index="0" unique_id=925054763]
+layout_mode = 2
+
+[node name="Scroll" parent="Panel/Margin/Layout/DataPanel" index="0" unique_id=1400479878 instance=ExtResource("3_wbxyf")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Grid" type="GridContainer" parent="Panel/Margin/Layout/DataPanel/Scroll/Margin" parent_id_path=PackedInt32Array(1400479878, 172388897) index="0" unique_id=939425580]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ViewPanel" type="SubViewportContainer" parent="Panel/Margin/Layout" index="1" unique_id=2021903965]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="View" type="SubViewport" parent="Panel/Margin/Layout/ViewPanel" index="0" unique_id=688926857]
+unique_name_in_owner = true
+own_world_3d = true
+world_3d = SubResource("World3D_kd67b")
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1120, 628)
+render_target_update_mode = 4
+
+[node name="Root" parent="Panel/Margin/Layout/ViewPanel/View" index="0" unique_id=1583793090 instance=ExtResource("4_fslmo")]
+unique_name_in_owner = true
+
+[editable path="Panel/Margin/Layout/DataPanel/Scroll"]
