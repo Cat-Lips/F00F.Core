@@ -1,0 +1,8 @@
+/.vs
+/.godot
+/.export
+
+/Assets
+
+*.log
+*.csproj.*

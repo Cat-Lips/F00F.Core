@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ox6rt0tt407w"]
+
+[ext_resource type="Script" uid="uid://b4bh7wkfefgsi" path="res://addons/F00F.Core/UI/GUI.cs" id="1_33hc5"]
+[ext_resource type="PackedScene" uid="uid://ctr351crtkost" path="res://addons/F00F.Core/UI/MainMenus/MainMenu1/MainMenu1.tscn" id="2_e58t6"]
+[ext_resource type="PackedScene" uid="uid://glf5fs8xnm8o" path="res://addons/F00F.Core/UI/Parts/PlayerList.tscn" id="2_qpibf"]
+[ext_resource type="PackedScene" uid="uid://beg6e0rlv57e3" path="res://addons/F00F.Core/UI/Parts/QuickHelp.tscn" id="4_xt6xt"]
+
+[node name="UI" type="CanvasLayer" unique_id=2054217291]
+script = ExtResource("1_33hc5")
+MainMenu = ExtResource("2_e58t6")
+
+[node name="PlayerList" parent="." unique_id=782195437 instance=ExtResource("2_qpibf")]
+
+[node name="QuickHelp" parent="." unique_id=118424972 instance=ExtResource("4_xt6xt")]

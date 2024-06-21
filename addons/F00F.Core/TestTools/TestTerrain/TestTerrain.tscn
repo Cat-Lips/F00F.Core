@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d2nixf13o5pe2"]
+
+[ext_resource type="Script" uid="uid://d0c38pthnxwj3" path="res://addons/F00F.Core/TestTools/TestTerrain/TestTerrain.cs" id="1_x3h5t"]
+[ext_resource type="PhysicsMaterial" uid="uid://d2f06ogmgijxg" path="res://addons/F00F.Core/TestTools/Tools/MaxBounce.tres" id="3_x3h5t"]
+[ext_resource type="PackedScene" uid="uid://38i12o6wnxi8" path="res://addons/F00F.Core/Common/3D/World/WorldBounds.tscn" id="3_x3mqs"]
+
+[node name="Terrain" type="StaticBody3D" unique_id=119963059]
+script = ExtResource("1_x3h5t")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=619165001]
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=767676393]
+
+[node name="Bounds" parent="." unique_id=1537672825 instance=ExtResource("3_x3mqs")]
+physics_material_override = ExtResource("3_x3h5t")
