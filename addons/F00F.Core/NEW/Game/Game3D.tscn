@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cmqj6v4nctwod"]
+
+[ext_resource type="PackedScene" uid="uid://65wqobdnmoqf" path="res://addons/F00F.Core/NEW/Game/Game.tscn" id="1_xi4q4"]
+[ext_resource type="Script" uid="uid://7ld4t70heb08" path="res://addons/F00F.Core/NEW/Game/Game3D.cs" id="2_klxrr"]
+[ext_resource type="PackedScene" uid="uid://bi25yukkiaogr" path="res://addons/F00F.Core/NEW/Camera/Camera.tscn" id="4_h2e8b"]
+[ext_resource type="Script" uid="uid://carjjd4svc86r" path="res://addons/F00F.Core/NEW/Camera/Config/CameraConfig.cs" id="5_w2xcq"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_imod4"]
+noise_type = 3
+frequency = 0.8
+
+[sub_resource type="Resource" id="Resource_4mt34"]
+script = ExtResource("5_w2xcq")
+ShakeNoise = SubResource("FastNoiseLite_imod4")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjuns"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_eo0is"]
+sky_material = SubResource("ProceduralSkyMaterial_hjuns")
+
+[sub_resource type="Environment" id="Environment_cj6d2"]
+background_mode = 2
+sky = SubResource("Sky_eo0is")
+glow_enabled = true
+
+[node name="Root" unique_id=1971865465 instance=ExtResource("1_xi4q4")]
+script = ExtResource("2_klxrr")
+
+[node name="Camera" parent="." index="0" unique_id=346499136 instance=ExtResource("4_h2e8b")]
+Config = SubResource("Resource_4mt34")
+
+[node name="Light" type="DirectionalLight3D" parent="." index="1" unique_id=1326166333]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Env" type="WorldEnvironment" parent="." index="2" unique_id=1374897837]
+environment = SubResource("Environment_cj6d2")

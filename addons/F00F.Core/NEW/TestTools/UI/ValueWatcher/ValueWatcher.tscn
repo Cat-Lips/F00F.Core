@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cdwaunciplhc5"]
+
+[ext_resource type="PackedScene" uid="uid://cllg26jgvexcv" path="res://addons/F00F.Core/Common/UI/Screens/DataView/DataView.tscn" id="1_v7gfc"]
+[ext_resource type="Theme" uid="uid://bbnlsy6nlnnqo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Theme.Debug.tres" id="2_du2iy"]
+[ext_resource type="Script" uid="uid://cscrygdn31c5s" path="res://addons/F00F.Core/NEW/TestTools/UI/ValueWatcher/ValueWatcher.cs" id="2_tom00"]
+
+[node name="Root" unique_id=40980128 instance=ExtResource("1_v7gfc")]
+theme = ExtResource("2_du2iy")
+script = ExtResource("2_tom00")
+AutoShow = true
+
+[node name="Scroll" parent="Panel/Margin/Layout" parent_id_path=PackedInt32Array(1051121370) index="0" unique_id=1009012198]
+custom_minimum_size = Vector2(0, 0)
+
+[editable path="Panel/Margin/Layout/Scroll"]

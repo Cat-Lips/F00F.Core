@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cpm8be52seh0a"]
+
+[ext_resource type="PackedScene" uid="uid://tgnum7qeyfb5" path="res://addons/F00F.Core/Common/UI/Controls/StrEdit/StrEdit.tscn" id="1_r3wso"]
+[ext_resource type="Script" uid="uid://obsv624sv258" path="res://addons/F00F.Core/NEW/Network/UI/Controls/PlayerName.cs" id="2_834p1"]
+
+[node name="PlayerName" unique_id=3430171 instance=ExtResource("1_r3wso")]
+tooltip_text = "Player Name"
+placeholder_text = "Player Name"
+script = ExtResource("2_834p1")

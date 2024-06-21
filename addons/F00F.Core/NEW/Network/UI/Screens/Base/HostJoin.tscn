@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c5ockh4nw2vvb"]
+
+[ext_resource type="PackedScene" uid="uid://b3mghnepoas47" path="res://addons/F00F.Core/Common/UI/Screens/PopupView/PopupView.tscn" id="1_dnapv"]
+[ext_resource type="Script" uid="uid://dyxcaemw0553e" path="res://addons/F00F.Core/NEW/Network/UI/Screens/Base/HostJoin.cs" id="2_affrs"]
+[ext_resource type="PackedScene" uid="uid://cpm8be52seh0a" path="res://addons/F00F.Core/NEW/Network/UI/Controls/PlayerName.tscn" id="3_0po5i"]
+[ext_resource type="PackedScene" uid="uid://cnpc6fq18s7id" path="res://addons/F00F.Core/NEW/Network/UI/Controls/ActiveProviders.tscn" id="4_laryx"]
+
+[node name="Layout" unique_id=1888813347 instance=ExtResource("1_dnapv")]
+script = ExtResource("2_affrs")
+
+[node name="Title" parent="." index="0" unique_id=1852269724]
+text = "Host/Join"
+
+[node name="PlayerName" parent="." index="2" unique_id=626647005 instance=ExtResource("3_0po5i")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Providers" type="HBoxContainer" parent="." index="3" unique_id=1680216192]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Providers" index="0" unique_id=326960214]
+layout_mode = 2
+text = "Service"
+
+[node name="Provider" parent="Providers" index="1" unique_id=984886163 instance=ExtResource("4_laryx")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Proceed" parent="Buttons" parent_id_path=PackedInt32Array(2077175377) index="2" unique_id=1900788638]
+disabled = true

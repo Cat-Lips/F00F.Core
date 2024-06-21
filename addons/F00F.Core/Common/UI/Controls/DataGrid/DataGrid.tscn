@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ccbh5dsf23oat"]
+
+[ext_resource type="Script" uid="uid://bgl1tvdk6irgp" path="res://addons/F00F.Core/Common/UI/Controls/DataGrid/DataGrid.cs" id="1_f4ueu"]
+
+[node name="DataGrid" type="Tree" unique_id=1270554405]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+column_titles_visible = true
+hide_folding = true
+hide_root = true
+select_mode = 1
+scroll_hint_mode = 1
+script = ExtResource("1_f4ueu")

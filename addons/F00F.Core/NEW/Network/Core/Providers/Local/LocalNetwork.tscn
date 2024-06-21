@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cp2d31g26hyb0"]
+
+[ext_resource type="Script" uid="uid://d2ehkjdhlxdep" path="res://addons/F00F.Core/NEW/Network/Core/Providers/Local/LocalNetwork.cs" id="1_aox4n"]
+
+[node name="LAN" type="Node" unique_id=1359613026]
+script = ExtResource("1_aox4n")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://65wqobdnmoqf"]
+
+[ext_resource type="Script" uid="uid://b6aarthf07hvj" path="res://addons/F00F.Core/NEW/Game/Game.cs" id="1_fsg7h"]
+[ext_resource type="PackedScene" uid="uid://vnfsvd0yj4t7" path="res://addons/F00F.Core/NEW/GUI/GUI.tscn" id="2_7uqm3"]
+[ext_resource type="PackedScene" uid="uid://dnv14yjb1cg1g" path="res://addons/F00F.Core/NEW/Input/MyInput.tscn" id="2_uiais"]
+[ext_resource type="PackedScene" uid="uid://duvv27gb16to1" path="res://addons/F00F.Core/NEW/Network/Network.tscn" id="3_y4mdj"]
+
+[node name="Root" type="Node" unique_id=1971865465]
+script = ExtResource("1_fsg7h")
+
+[node name="Network" parent="." unique_id=667835163 instance=ExtResource("3_y4mdj")]
+
+[node name="Input" parent="." unique_id=1382070672 instance=ExtResource("2_uiais")]
+
+[node name="UI" parent="." unique_id=536397612 instance=ExtResource("2_7uqm3")]

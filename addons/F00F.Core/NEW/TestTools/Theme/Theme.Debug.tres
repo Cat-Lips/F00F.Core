@@ -1,0 +1,29 @@
+[gd_resource type="Theme" format=3 uid="uid://bbnlsy6nlnnqo"]
+
+[ext_resource type="StyleBox" uid="uid://draavm7jesq4m" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Disabled.tres" id="1_i24rl"]
+[ext_resource type="StyleBox" uid="uid://dba08eba1hqgv" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Focus.tres" id="2_pq6st"]
+[ext_resource type="StyleBox" uid="uid://ccw7kjwwll4qo" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Hover.tres" id="3_6quif"]
+[ext_resource type="StyleBox" uid="uid://85r8gfh7cju0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Normal.tres" id="4_48fc8"]
+[ext_resource type="StyleBox" uid="uid://bl16371kv713t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/Button.Style.Compact.Pressed.tres" id="5_mwiau"]
+[ext_resource type="StyleBox" uid="uid://btst06pkt7eo0" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Focus.tres" id="6_3k3tb"]
+[ext_resource type="StyleBox" uid="uid://bqvdbus42yxos" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.Normal.tres" id="7_f00r0"]
+[ext_resource type="StyleBox" uid="uid://biko5dwx1m26t" path="res://addons/F00F.Core/NEW/TestTools/Theme/Styles/LineEdit.Style.Compact.ReadOnly.tres" id="8_u8hjr"]
+
+[resource]
+default_font_size = 8
+BoxContainer/constants/separation = 1
+Button/constants/icon_max_width = 12
+Button/styles/disabled = ExtResource("1_i24rl")
+Button/styles/focus = ExtResource("2_pq6st")
+Button/styles/hover = ExtResource("3_6quif")
+Button/styles/normal = ExtResource("4_48fc8")
+Button/styles/pressed = ExtResource("5_mwiau")
+GridContainer/constants/h_separation = 1
+GridContainer/constants/v_separation = 1
+LineEdit/font_sizes/font_size = 6
+LineEdit/styles/focus = ExtResource("6_3k3tb")
+LineEdit/styles/normal = ExtResource("7_f00r0")
+LineEdit/styles/read_only = ExtResource("8_u8hjr")
+SpinBox/constants/field_and_buttons_separation = -2
+SpinBoxInnerLineEdit/base_type = &"LineEdit"
+SpinBoxInnerLineEdit/font_sizes/font_size = 6

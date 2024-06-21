@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dl0cgqssb0f0o"]
+
+[ext_resource type="PackedScene" uid="uid://detue2yxy7yt5" path="res://addons/F00F.Core/Common/UI/Root.tscn" id="1_88li5"]
+[ext_resource type="Script" uid="uid://b4gs6uhxaq4fd" path="res://addons/F00F.Core/Common/UI/Controls/SlideBar/SlideBar.cs" id="2_88li5"]
+
+[node name="SlideBar" unique_id=1486111448 instance=ExtResource("1_88li5")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = -25.5
+offset_right = 44.0
+offset_bottom = 25.5
+script = ExtResource("2_88li5")
+
+[node name="Layout" type="HBoxContainer" parent="Panel/Margin" parent_id_path=PackedInt32Array(915796819) index="0" unique_id=454828572]
+layout_mode = 2
+
+[node name="Title" type="Button" parent="Panel/Margin/Layout" index="0" unique_id=442716041]
+unique_name_in_owner = true
+layout_mode = 2
+toggle_mode = true
+text = "Title"
+flat = true
+
+[node name="Sep" type="Label" parent="Panel/Margin/Layout" index="1" unique_id=242242498]
+unique_name_in_owner = true
+layout_mode = 2
+text = " > "
+
+[node name="Content" type="HBoxContainer" parent="Panel/Margin/Layout" index="2" unique_id=478299627]
+unique_name_in_owner = true
+layout_mode = 2
